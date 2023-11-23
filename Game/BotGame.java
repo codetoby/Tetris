@@ -6,6 +6,7 @@ public class BotGame extends TetrisBase {
   
     public BotGame(int width, int height, int size, StartingMenu startingMenu)  {
         super(width, height, size, startingMenu, 1000);
+        Utils.shuffleArray(input);
     }
 
     public void updateGame(ActionEvent evt) {

@@ -18,14 +18,14 @@ public class Bot {
                 { 1, 1, 1, 1, -1 },
         };
 
-        // for (int i = 0; i < board.length; i++) {
-        //     for (int j = 0; j < board[i].length; j++) {
-        //         board[i][j] = -1;
-        //     }
-        // }
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                board[i][j] = -1;
+            }
+        }
 
         // char[] input = { 'L', 'I', 'U', 'V', 'W', 'Y', 'Z', 'P', 'N', 'F', 'X' };
-        int id = Utils.characterToID('I');
+        int id = Utils.characterToID('L');
         int[][][] permuations = PentominosDatabase.data[id];
         
 
@@ -97,13 +97,13 @@ public class Bot {
                         // }
 
                     }
-                    if (j == 0 && i != 0) {
+                    if (((j == 0 || j == cols - 1) && i != 0) || i == rows - 1) {
                         score += 1;
                     }
                     if (score > 0) {
                         totalScore += score;
                         emptySpaces.add(new EmptySpace(i, j, score));
-                        // System.out.println("x: " + i + ", y: " + j + " Score: " + score);
+                        System.out.println("x: " + i + ", y: " + j + " Score: " + score);
                     }
                 }
             }
@@ -232,7 +232,7 @@ public class Bot {
         int boardHeightNew = firstEmptyRowFromBottom(_board);
         int boardHeightOld = firstEmptyRowFromBottom(board);
         int diffrence = boardHeightNew - boardHeightOld;
-        totalScore -= (diffrence * 2);
+        totalScore -= (diffrence);
 
         return totalScore;
     }

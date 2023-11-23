@@ -90,6 +90,7 @@ public abstract class TetrisBase extends JPanel {
     public void checkForFullLines(int[][] field) {
         for (int k = field.length - 1; k >= 0; k--) {
             boolean full = true;
+            int line = k;
             for (int j = 0; j < field[0].length; j++) {
                 if (field[k][j] == -1) {
                     full = false;
@@ -97,13 +98,33 @@ public abstract class TetrisBase extends JPanel {
                 }
             }
             if (full == true) {
-                for (int j = k - 1; j >= 0; j--) {
-                    for (int l = 0; l < field[0].length; l++) {
-                        field[j + 1][l] = field[j][l];
+                for (int l = 0; l < field[0].length; l++) {
+                    field[line][l] = -1;
+                }
+                cascadeGravity(field);
+                checkForFullLines(field);
+                
+                menu.score.incrementScore();
+            }
+        }
+    }
+
+    public void cascadeGravity(int[][] board) {
+        int rows = board.length;
+        int cols = board[0].length;
+
+        for (int i = rows - 1; i >= 0; i--) {
+            for (int j = 0; j < cols; j++) {
+                if (board[i][j] != -1) {
+                    int x = i;
+                    while (x < rows - 1 && board[x + 1][j] == -1) {
+                        x++;
+                    }
+                    if (x != i) {
+                        board[x][j] = board[i][j];
+                        board[i][j] = -1;
                     }
                 }
-                k += 1;
-                menu.score.incrementScore();
             }
         }
     }
