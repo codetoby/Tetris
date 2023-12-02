@@ -7,16 +7,7 @@ public class Bot {
 
     public static void main(String[] args) {
 
-        int[][] board = {
-                { 1, 1, 1, 1, -1 },
-                { 1, 1, 1, 1, -1 },
-                { 1, 1, 1, 1, -1 },
-                { 1, 1, 1, 1, -1 },
-                { 1, 1, 1, 1, -1 },
-                { 1, 1, 1, 1, -1 },
-                { 1, 1, 1, 1, -1 },
-                { 1, 1, 1, 1, -1 },
-        };
+        int[][] board = new int[15][5];
 
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
@@ -24,27 +15,47 @@ public class Bot {
             }
         }
 
-        // char[] input = { 'L', 'I', 'U', 'V', 'W', 'Y', 'Z', 'P', 'N', 'F', 'X' };
-        int id = Utils.characterToID('L');
-        int[][][] permuations = PentominosDatabase.data[id];
-        
+        board[14][0] = 1;
+        board[14][1] = 1;
+        board[14][2] = 1;
+        board[14][4] = 1;
 
-        BestPosition bestpos = computeScore(board, permuations);
+        board[13][0] = 1;
+        board[13][2] = 1;
+        board[13][4] = 1;
+
+        board[12][0] = 1;
+        board[12][1] = 1;
+        board[12][2] = 1;
+        board[12][4] = 1;
+
+        board[11][0] = 1;
+        board[11][1] = 1;
+   
+
+        board[10][1] = 1;
+        int width = board[0].length * 50;
+        int height = board.length * 50;    
+
+        // char[] input = { 'L', 'I', 'U', 'V', 'W', 'Y', 'Z', 'P', 'N', 'F', 'X' };
+        // int id = Utils.characterToID('L');
+        // int[][][] permuations = PentominosDatabase.data[id];
+
+        // BestPosition bestpos = computeScore(board, permuations);
         int totalScore = calculatePoints(board);
         // System.out.println(totalScore);
-        System.out.println("Amount of permutations: " + permuations.length);
-        int bestX = bestpos.x;
-        int bestY = bestpos.y;
-        int[][] bestPiece = bestpos.piece;
-        int maxScore = bestpos.score;
+        // System.out.println("Amount of permutations: " + permuations.length);
+        // int bestX = bestpos.x;
+        // int bestY = bestpos.y;
+        // int[][] bestPiece = bestpos.piece;
+        // int maxScore = bestpos.score;
 
-        int width = board[0].length * 50;
-        int height = board.length * 50;
+        
 
-        System.out.println("Best Position (x, y): (" + bestX + "," + bestY + ")");
-        System.out.println("Best Score: " + (totalScore - maxScore));
-        System.out.println("Best Piece: ");
-        Utils.printMatrix(bestPiece);
+        // System.out.println("Best Position (x, y): (" + bestX + "," + bestY + ")");
+        // System.out.println("Best Score: " + (totalScore - maxScore));
+        // System.out.println("Best Piece: ");
+        // Utils.printMatrix(bestPiece);
 
         JFrame frame = new JFrame();
         frame.setTitle("Tetris");
@@ -52,11 +63,10 @@ public class Bot {
         frame.setSize(width + 13, height + 35);
         frame.setLocationRelativeTo(null);
         frame.setResizable(true);
-
         Grid grid = new Grid(50, width, height * 50, board);
         frame.add(grid);
-        addPiece(board, bestPiece, 2, bestX, bestY);
-        grid.setGrid(board, 2);
+        // addPiece(board, bestPiece, 2, bestX, bestY);
+        // grid.setGrid(board, 2, emptySpaces);
         frame.setVisible(true);
     }
 
@@ -93,7 +103,7 @@ public class Bot {
                             }
                         }
                         // } else if (i == rows - 1) {
-                        //     score += 1;
+                        // score += 1;
                         // }
 
                     }
@@ -103,7 +113,7 @@ public class Bot {
                     if (score > 0) {
                         totalScore += score;
                         emptySpaces.add(new EmptySpace(i, j, score));
-                        System.out.println("x: " + i + ", y: " + j + " Score: " + score);
+                        // System.out.println("x: " + i + ", y: " + j + " Score: " + score);
                     }
                 }
             }
@@ -139,7 +149,7 @@ public class Bot {
     public static BestPosition computeScore(int[][] board, int[][][] data) {
 
         int totalScore = calculatePoints(board);
-        int maxScore = totalScore;
+        double maxScore = totalScore;
 
         int rows = board.length;
         int cols = board[0].length;
@@ -148,7 +158,7 @@ public class Bot {
         int bestY = -1;
         int[][] bestPiece = {};
 
-        int score;
+        double score = 0;
 
         for (int[][] piece : data) {
             for (int i = 0; i < rows; i++) {
@@ -179,7 +189,7 @@ public class Bot {
             }
         }
 
-        return new BestPosition(bestX - bestPiece.length + 1, bestY - adj, bestPiece, maxScore);
+        return new BestPosition(bestX - bestPiece.length + 1, bestY - adj, bestPiece, (int) maxScore);
     }
 
     /**
@@ -192,7 +202,7 @@ public class Bot {
      * @param board game board
      * @return total score for the specific position
      */
-    public static int checkIfPieceFitsIn(int x, int y, int[][] piece, int[][] board) {
+    public static double checkIfPieceFitsIn(int x, int y, int[][] piece, int[][] board) {
         int rows = piece.length;
         int cols = piece[0].length;
         int adj = 0;
@@ -205,7 +215,7 @@ public class Bot {
 
         int startX = x - rows + 1;
         int startY = y - adj;
-        int totalScore = 0;
+        double totalScore = 0;
         if (startX >= 0 && startX + rows <= board.length && startY >= 0 && startY + cols <= board[0].length) {
             for (int i = 0; i < rows; i++) {
                 for (int j = 0; j < cols; j++) {
@@ -224,17 +234,63 @@ public class Bot {
 
         // System.out.println("Starting X: " + startX + ", Starting Y: " + startY);
 
+        // amount of cleared lines
         int[][] _board = Utils.deepCopy(board);
         addPiece(_board, piece, 1, startX, startY);
         int fullRows = countFullRows(_board);
-        totalScore += (fullRows * 10);
 
+        // height difference
         int boardHeightNew = firstEmptyRowFromBottom(_board);
         int boardHeightOld = firstEmptyRowFromBottom(board);
         int diffrence = boardHeightNew - boardHeightOld;
-        totalScore -= (diffrence);
+
+        // // count deadspaces
+        int deadspaces = countDeadSpace(_board);
+
+        totalScore += 2 * fullRows - .5 * diffrence - 0.125 * deadspaces;
 
         return totalScore;
+    }
+
+    public static int countDeadSpace(int[][] board) {
+
+        int rows = board.length;
+        int cols = board[0].length;
+
+        int deadspaces = 0;
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (board[i][j] == -1) {
+                    deadspaces += checkSpace(board, rows, cols, i, j);
+                }
+            }
+        }
+
+        return deadspaces;
+    }
+
+    public static int checkSpace(int[][] board, int boardHeight, int boardWidth, int i, int j) {
+
+        int[][] directions = {
+                { 1, 0 },
+                { -1, 0 },
+                { 0, -1 },
+                { 0, 1 }
+        };
+
+        for (int[] direction : directions) {
+            int newI = i + direction[0];
+            int newJ = j + direction[1];
+
+            if (newI < 0 || newI >= boardHeight || newJ < 0 || newJ >= boardWidth) {
+                continue;
+            }
+            if (board[newI][newJ] == -1) {
+                return 0;
+            }
+        }
+        return 1;
     }
 
     public static int firstEmptyRowFromBottom(int[][] board) {

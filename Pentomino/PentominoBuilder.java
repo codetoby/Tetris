@@ -142,8 +142,7 @@ public class PentominoBuilder {
      * Assume that the matrix is a square!
      * It does not make a copy, so the return matrix does not have to be used
      * 
-     * @param data:     a matrix
-     * @param rotation: amount of rotation
+     * @param data:     a matrixs
      * @return the rotated matrix
      */
 

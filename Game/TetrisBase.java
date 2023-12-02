@@ -21,13 +21,14 @@ public abstract class TetrisBase extends JPanel {
     public final int WIDTHMENU = 300;
     public int nextId;
     public int[][] nextPiece;
-    public char[] input = { 'L', 'I', 'U', 'V', 'W', 'Y', 'Z', 'P', 'N', 'F', 'X' };
+    public char[] input = { 'N', 'V', 'L', 'P', 'X', 'I', 'W', 'F', 'Y', 'Z', 'U' };
     public int index = 0;
     public int tempEntryY = entryY;
     public int tempEntryX = entryX;
     public int[][] prevPiece;
     public StartingMenu startingMenu;
     public int delay;
+    public boolean keyPressed = false;
 
     public TetrisBase(int width, int height, int size, StartingMenu startingMenu, int delay) {
         this.width = width;
@@ -48,18 +49,19 @@ public abstract class TetrisBase extends JPanel {
         field = new int[height / size][width / size];
         grid = new Grid(size, width, height, field);
         add(grid, BorderLayout.WEST);
-        
+
         menu = new Menu(WIDTHMENU, height, this);
-        add(menu, BorderLayout.EAST);       
+        add(menu, BorderLayout.EAST);
 
         nextPiece(index);
-        
+
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++) {
                 field[i][j] = -1;
             }
         }
 
+        int count = 0;
         timer = new Timer(delay, new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 updateGame(evt);
@@ -70,6 +72,7 @@ public abstract class TetrisBase extends JPanel {
     }
 
     public abstract void nextPiece(int index);
+
     public abstract void updateGame(ActionEvent evt);
 
     public void resetPosition() {
@@ -77,7 +80,6 @@ public abstract class TetrisBase extends JPanel {
         entryY = 0;
     }
 
-    
     public boolean checkGameEnds(int[][] field, int id) {
         for (int m = 0; m < field[0].length; m++) {
             if (field[0][m] == id) {
@@ -103,7 +105,7 @@ public abstract class TetrisBase extends JPanel {
                 }
                 cascadeGravity(field);
                 checkForFullLines(field);
-                
+
                 menu.score.incrementScore();
             }
         }
@@ -135,13 +137,11 @@ public abstract class TetrisBase extends JPanel {
                 if (piece[i][j] == 1) {
                     int fieldX = x + i + 1;
                     int fieldY = y + j;
-    
-                    // Check if the piece is outside the field bounds
+
                     if (fieldX < 0 || fieldX >= field.length || fieldY < 0 || fieldY >= field[0].length) {
                         return true;
                     }
-    
-                    // Check for collision with other pieces
+
                     if (field[fieldX][fieldY] != -1 && field[fieldX][fieldY] != id) {
                         return true;
                     }
@@ -166,7 +166,7 @@ public abstract class TetrisBase extends JPanel {
             }
         }
     }
-    
+
     public static void addPiece(int[][] field, int[][] piece, int pieceID, int x, int y) {
         for (int i = 0; i < piece.length; i++) {
             for (int j = 0; j < piece[i].length; j++) {
