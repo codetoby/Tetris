@@ -53,18 +53,18 @@ public abstract class TetrisBase extends JPanel {
         menu = new Menu(WIDTHMENU, height, this);
         add(menu, BorderLayout.EAST);
 
-        nextPiece(index);
-
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++) {
                 field[i][j] = -1;
             }
         }
 
-        int count = 0;
+        nextPiece(index);
+
+        // int count = 0;
         timer = new Timer(delay, new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                updateGame(evt);
+                updateGame();
             }
         });
         timer.start();
@@ -73,7 +73,7 @@ public abstract class TetrisBase extends JPanel {
 
     public abstract void nextPiece(int index);
 
-    public abstract void updateGame(ActionEvent evt);
+    public abstract void updateGame();
 
     public void resetPosition() {
         entryX = 0;
