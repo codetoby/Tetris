@@ -37,25 +37,25 @@ public class Bot {
         int width = board[0].length * 50;
         int height = board.length * 50;    
 
-        // char[] input = { 'L', 'I', 'U', 'V', 'W', 'Y', 'Z', 'P', 'N', 'F', 'X' };
-        // int id = Utils.characterToID('L');
-        // int[][][] permuations = PentominosDatabase.data[id];
+        // { 'L', 'I', 'U', 'V', 'W', 'Y', 'Z', 'P', 'N', 'F', 'X' };
+        int id = Utils.characterToID('L');
+        int[][][] permuations = PentominosDatabase.data[id];
 
-        // BestPosition bestpos = computeScore(board, permuations);
+        BestPosition bestpos = computeScore(board, permuations);
         int totalScore = calculatePoints(board);
-        // System.out.println(totalScore);
-        // System.out.println("Amount of permutations: " + permuations.length);
-        // int bestX = bestpos.x;
-        // int bestY = bestpos.y;
-        // int[][] bestPiece = bestpos.piece;
-        // int maxScore = bestpos.score;
+        System.out.println(totalScore);
+        System.out.println("Amount of permutations: " + permuations.length);
+        int bestX = bestpos.x;
+        int bestY = bestpos.y;
+        int[][] bestPiece = bestpos.piece;
+        int maxScore = bestpos.score;
 
         
 
-        // System.out.println("Best Position (x, y): (" + bestX + "," + bestY + ")");
-        // System.out.println("Best Score: " + (totalScore - maxScore));
-        // System.out.println("Best Piece: ");
-        // Utils.printMatrix(bestPiece);
+        System.out.println("Best Position (x, y): (" + bestX + "," + bestY + ")");
+        System.out.println("Best Score: " + (totalScore - maxScore));
+        System.out.println("Best Piece: ");
+        Utils.printMatrix(bestPiece);
 
         JFrame frame = new JFrame();
         frame.setTitle("Tetris");
@@ -65,8 +65,8 @@ public class Bot {
         frame.setResizable(true);
         Grid grid = new Grid(50, width, height * 50, board);
         frame.add(grid);
-        // addPiece(board, bestPiece, 2, bestX, bestY);
-        // grid.setGrid(board, 2, emptySpaces);
+        addPiece(board, bestPiece, 2, bestX, bestY);
+        grid.setGrid(board, 2, emptySpaces);
         frame.setVisible(true);
     }
 
@@ -113,7 +113,6 @@ public class Bot {
                     if (score > 0) {
                         totalScore += score;
                         emptySpaces.add(new EmptySpace(i, j, score));
-                        // System.out.println("x: " + i + ", y: " + j + " Score: " + score);
                     }
                 }
             }
@@ -166,9 +165,6 @@ public class Bot {
                     score = 0;
                     if (board[i][j] == -1) {
                         score = checkIfPieceFitsIn(i, j, piece, board);
-                        // if (score != 0) {
-                        // System.out.println(score);
-                        // }
                         if (totalScore - score <= maxScore) {
                             maxScore = totalScore - score;
                             bestX = i;

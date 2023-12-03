@@ -19,7 +19,7 @@ public class TetrisGame extends TetrisBase implements KeyListener {
     }
 
     @Override
-    public void updateGame(ActionEvent evt) {
+    public void updateGame() {
         clearBoard(field, prevPiece, tempEntryX, tempEntryY, id);
         tempEntryY = entryY;
         tempEntryX = entryX;
