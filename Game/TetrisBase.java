@@ -21,7 +21,7 @@ public abstract class TetrisBase extends JPanel {
     public final int WIDTHMENU = 300;
     public int nextId;
     public int[][] nextPiece;
-    public char[] input = { 'N', 'V', 'L', 'P', 'X', 'I', 'W', 'F', 'Y', 'Z', 'U' };
+    public char[] input = { 'N', 'V', 'L', 'P', 'X', 'I', 'W', 'F', 'Y', 'Z', 'U', 'T' };
     public int index = 0;
     public int tempEntryY = entryY;
     public int tempEntryX = entryX;
@@ -69,7 +69,7 @@ public abstract class TetrisBase extends JPanel {
                 updateGame();
             }
         });
-        timer.setRepeats(false);
+        timer.setRepeats(true);
         timer.start();
 
     }
@@ -107,13 +107,7 @@ public abstract class TetrisBase extends JPanel {
                     field[line][l] = -1;
                 }
                 cascadeGravity(field);
-
-                Timer delay = new Timer(100, null);
-                delay.setRepeats(false);
-                delay.start();
-                while(delay.isRunning());
                 grid.setGrid(field, index);
-
                 checkForFullLines(field);
 
                 menu.score.incrementScore();
@@ -147,11 +141,11 @@ public abstract class TetrisBase extends JPanel {
                 if (piece[i][j] == 1) {
                     int fieldX = x + i + 1;
                     int fieldY = y + j;
-
+    
                     if (fieldX < 0 || fieldX >= field.length || fieldY < 0 || fieldY >= field[0].length) {
                         return true;
                     }
-
+    
                     if (field[fieldX][fieldY] != -1 && field[fieldX][fieldY] != id) {
                         return true;
                     }
@@ -160,6 +154,7 @@ public abstract class TetrisBase extends JPanel {
         }
         return false;
     }
+    
 
     public void clearBoard(int[][] field, int[][] piece, int prevX, int prevY, int id) {
         for (int i = 0; i < piece.length; i++) {

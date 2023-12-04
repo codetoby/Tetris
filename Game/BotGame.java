@@ -1,3 +1,5 @@
+import java.util.concurrent.atomic.AtomicInteger;
+
 import javax.swing.Timer;
 
 public class BotGame extends TetrisBase {
@@ -6,19 +8,16 @@ public class BotGame extends TetrisBase {
     private Timer pieceTimer;
 
     public BotGame(int width, int height, int size, StartingMenu startingMenu) {
-        super(width, height, size, startingMenu, 500);
+        super(width, height, size, startingMenu, 10);
+        // Utils.shuffleArray(input);
     }
 
     @Override
     public void updateGame() {
-        pieceTimer = new Timer(200, e -> handlePieceMovement());
-
-        pieceTimer.setRepeats(true);
-        pieceTimer.start();
+        handlePieceMovement();
     }
 
     private void handlePieceMovement() {
-        // timer.stop();
         clearBoard(field, prevPiece, tempEntryX, tempEntryY, id);
         tempEntryY = entryY;
         tempEntryX = entryX;
@@ -29,9 +28,11 @@ public class BotGame extends TetrisBase {
 
         if (entryX + piece.length > (height / size) || checkCollision(field, piece, entryX, entryY, id)) {
             placePieceOnField(piece, field);
-
             grid.setGrid(field, id);
+
+            // prepareNextPiece();
             checkForFullLines(field);
+            // grid.setGrid(field, id);
             if (checkGameEnds(field, id)) {
                 timer.stop();
                 return;
@@ -49,8 +50,15 @@ public class BotGame extends TetrisBase {
         nextPiece(index);
     }
 
-    @Override
-    public void checkForFullLines(int[][] field) {
+    
+    public void checkForFullLine(int[][] field) {
+        // Utils.printMatrix(field);
+        grid.setGrid(field, id);
+        pieceTimer.stop();
+
+        AtomicInteger linesToClear = new AtomicInteger();
+        AtomicInteger linesCleared = new AtomicInteger();
+
         for (int k = field.length - 1; k >= 0; k--) {
             boolean full = true;
             for (int j = 0; j < field[0].length; j++) {
@@ -60,28 +68,27 @@ public class BotGame extends TetrisBase {
                 }
             }
             if (full) {
+                linesToClear.getAndIncrement();
                 final int line = k;
                 for (int l = 0; l < field[0].length; l++) {
                     field[line][l] = -1;
                 }
-                grid.setGrid(field, id);
 
-                // Instead of a busy-wait, use ActionListener to perform actions after delay
                 Timer delay = new Timer(200, e -> {
+                    grid.setGrid(field, id);
                     cascadeGravity(field);
-                    grid.setGrid(field, id); // Update grid after cascading
-                    checkForFullLines(field); // Check for new full lines after cascading
+                    grid.setGrid(field, id);
+                    checkForFullLines(field);
                     menu.score.incrementScore();
-                    pieceTimer.start(); // Restart movement after cascading
                 });
                 delay.setRepeats(false);
                 delay.start();
-
-                pieceTimer.stop(); // Stop the piece movement while clearing lines
-                return; // Exit the function to wait for the delay to finish
+                while(delay.isRunning());
+                pieceTimer.start();
             }
         }
     }
+
 
     @Override
     public void nextPiece(int index) {
