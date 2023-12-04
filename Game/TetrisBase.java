@@ -40,7 +40,9 @@ public abstract class TetrisBase extends JPanel {
 
     public void initilize() {
         startingMenu.setSize(width + WIDTHMENU, height + size);
+        startingMenu.setResizable(false);
         setPreferredSize(new Dimension(width + WIDTHMENU, height));
+        setMaximumSize(new Dimension(width + WIDTHMENU, height));
         setVisible(true);
         requestFocusInWindow();
         setFocusable(true);

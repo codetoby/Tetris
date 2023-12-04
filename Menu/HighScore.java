@@ -9,8 +9,8 @@ public class HighScore extends JPanel{
 
     public HighScore() {
     
-        setBackground(Color.RED);
-        setPreferredSize(new Dimension(100, 75));
+        setBackground(new Color(200,200,200));
+        setPreferredSize(new Dimension(123, 75));
         setLayout(new GridBagLayout());
 
         GridBagConstraints gbc = new GridBagConstraints();
