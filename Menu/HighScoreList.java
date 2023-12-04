@@ -131,7 +131,9 @@ public class HighScoreList extends JPanel {
             int space = nextLine.indexOf(" ");
             String name =  nextLine.substring(0, space);
             int score = Integer.parseInt(nextLine.substring(space+1));
-            highScoreList.put(name, score);
+            if(!highScoreList.containsKey(name) ||(highScoreList.containsKey(name) && highScoreList.get(name)< score)){
+                highScoreList.put(name, score);
+            }
         }
         reader.close();
     }
