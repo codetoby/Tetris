@@ -3,8 +3,15 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.util.HashMap;
 import java.util.Set;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.border.LineBorder;
+
 
 public class HighScoreList extends JPanel {
     
@@ -27,6 +34,43 @@ public class HighScoreList extends JPanel {
         add(new JLabel(text));
 
         Set<String> names = highScoreList.keySet();
+
+        JTextArea playerName = new JTextArea("Name");
+        playerName.setPreferredSize(new Dimension(83, 20));
+        playerName.setBorder(new LineBorder(new Color(200,200,200), 2));
+        
+        JTextArea playerScore = new JTextArea("Score");
+        playerScore.setPreferredSize(new Dimension(82, 20));
+        playerScore.setBorder(new LineBorder(new Color(200,200,200), 2));
+        
+        JButton addListing = new JButton("Add Highscore");
+        addListing.setPreferredSize(new Dimension(170, 30));
+        addListing.setBorderPainted(false);
+        addListing.setBackground(new Color(200,200,200));
+        addListing.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    int score = Integer.parseInt(playerScore.getText());
+                    String name = playerName.getText();
+                    HighScoreList.highScoreList.put(name, score);
+                    String listing = " "+ name + " " + score;
+                    JLabel label = new JLabel(listing);
+                    label.setOpaque(true);
+                    label.setBackground(new Color(200, 200, 200));
+                    label.setPreferredSize(new Dimension(170, 50));
+                    add(label);
+                    revalidate();
+                    repaint();
+                } catch (Exception ex) {
+                    System.out.println("The textfield doesnt contain an int");
+                }
+            }
+        });
+
+        add(addListing);
+        add(playerName);
+        add(playerScore);
 
         for (String name : names) {
             int score = highScoreList.get(name);
