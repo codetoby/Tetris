@@ -5,11 +5,15 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Set;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -32,6 +36,12 @@ public class HighScoreList extends JPanel {
         text = "High Score List";
         add(new JLabel(text));
 
+        try {
+            readScores();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         
         Map<String, Integer> sortedScores = highScoreList.entrySet()//sorting the entries by their scores
         .stream()
@@ -42,14 +52,20 @@ public class HighScoreList extends JPanel {
 
         Set<String> names = sortedScores.keySet();
 
-        JTextArea playerName = new JTextArea("Name");
-        playerName.setPreferredSize(new Dimension(83, 20));
+        JTextArea playerName = new JTextArea();
+        playerName.setPreferredSize(new Dimension(130, 20));
         playerName.setBorder(new LineBorder(new Color(200,200,200), 2));
+
+        JLabel textAreaNameLabel = new JLabel("Name");
+        textAreaNameLabel.setLabelFor(playerName);
         
-        JTextArea playerScore = new JTextArea("Score");
-        playerScore.setPreferredSize(new Dimension(82, 20));
+        JTextArea playerScore = new JTextArea();
+        playerScore.setPreferredSize(new Dimension(130, 20));
         playerScore.setBorder(new LineBorder(new Color(200,200,200), 2));
-        
+
+        JLabel textAreaScoreLabel = new JLabel("Score");
+        textAreaScoreLabel.setLabelFor(playerScore);
+
         JButton addListing = new JButton("Add Highscore");
         addListing.setPreferredSize(new Dimension(170, 30));
         addListing.setBorderPainted(false);
@@ -62,6 +78,7 @@ public class HighScoreList extends JPanel {
                     String name = playerName.getText();
                     if (!highScoreList.containsKey(name) || highScoreList.get(name)< score) {
                         highScoreList.put(name, score);
+                        saveScore(name, score);
                     }
                     String listing = " "+ name + " " + score;
                     JLabel label = new JLabel(listing);
@@ -79,24 +96,45 @@ public class HighScoreList extends JPanel {
         });
         
         add(addListing);
+        add(textAreaNameLabel);
         add(playerName);
+        add(textAreaScoreLabel);
         add(playerScore);
         
         for (String name : names) {
             int score = sortedScores.get(name);
             text = " "+ name + " " + score;
-            System.out.println(score);
             JLabel label = new JLabel(text);
             label.setName("Entry");
             label.setOpaque(true);
             label.setBackground(new Color(200, 200, 200));
             label.setPreferredSize(new Dimension(170, 50));
             add(label);
-            System.out.println(label.getName());
         }
     
     }
+    public static void saveScore(String name, int score) throws IOException{
+        BufferedWriter writer = new BufferedWriter(new FileWriter("./Assets/Highscores.txt", true));
+        String output = name + " " + String.valueOf(score) + "\n";
+        writer.append(output);
+        writer.close();
+    }
 
+    public static void readScores() throws IOException{
+        Scanner reader = new Scanner(new File("./Assets/Highscores.txt"));
+        if(!reader.hasNext()) {
+            reader.close();
+            return;   
+        }
+        while (reader.hasNextLine()) {
+            String nextLine = reader.nextLine();
+            int space = nextLine.indexOf(" ");
+            String name =  nextLine.substring(0, space);
+            int score = Integer.parseInt(nextLine.substring(space+1));
+            highScoreList.put(name, score);
+        }
+        reader.close();
+    }
 
 
 }

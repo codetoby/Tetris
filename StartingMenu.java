@@ -63,7 +63,7 @@ public class StartingMenu extends JFrame {
 
         HighScoreList list = new HighScoreList();
         
-        list.setPreferredSize(new Dimension(184, 415));
+        list.setPreferredSize(new Dimension(184, 445));
 
         setLayout(new FlowLayout());
         add(logo);
