@@ -1,12 +1,15 @@
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.List;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -32,6 +35,7 @@ public class HighScoreList extends JPanel {
         setLayout(new FlowLayout());
 
         String text;
+        ArrayList<JLabel> entries = new ArrayList<>();
 
         text = "High Score List";
         add(new JLabel(text));
@@ -76,9 +80,13 @@ public class HighScoreList extends JPanel {
                 try {
                     int score = Integer.parseInt(playerScore.getText());
                     String name = playerName.getText();
+                    Set<JLabel> checkingSet = entries.stream().filter(c -> c.getText().contains(" "+name+" ")).collect(Collectors.toSet()); // this is stupid and genious at the same time 
+                    System.out.println(!checkingSet.isEmpty());
                     if (!highScoreList.containsKey(name) || highScoreList.get(name)< score) {
                         highScoreList.put(name, score);
                         saveScore(name, score);
+                    }if (!checkingSet.isEmpty()) {
+                        checkingSet.iterator().forEachRemaining(c -> remove(c));
                     }
                     String listing = " "+ name + " " + score;
                     JLabel label = new JLabel(listing);
@@ -89,6 +97,7 @@ public class HighScoreList extends JPanel {
                     add(label);
                     revalidate();
                     repaint();
+                    entries.add(label);
                 } catch (Exception ex) {
                     System.out.println("The textfield doesnt contain an int");
                 }
@@ -110,9 +119,12 @@ public class HighScoreList extends JPanel {
             label.setBackground(new Color(200, 200, 200));
             label.setPreferredSize(new Dimension(170, 50));
             add(label);
+            entries.add(label);
+            //entries.forEach(s -> System.out.println(s.getText()));
         }
     
     }
+
     public static void saveScore(String name, int score) throws IOException{
         BufferedWriter writer = new BufferedWriter(new FileWriter("./Assets/Highscores.txt", true));
         String output = name + " " + String.valueOf(score) + "\n";
