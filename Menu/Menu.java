@@ -17,9 +17,10 @@ public class Menu extends JPanel {
     }
 
     public void initilize() {
-        setBackground(Color.GRAY);
+        setBackground(new Color(100,100,100));
         setPreferredSize(new Dimension(width, height));
         setLayout(new FlowLayout()); 
+        
 
         score = new Score();
         add(score);
@@ -33,8 +34,8 @@ public class Menu extends JPanel {
         nextPentomino = new NextPentomino(piece);
         add(nextPentomino);
 
-        HighScoreList list = new HighScoreList();
-        add(list);
+        // HighScoreList list = new HighScoreList();
+        // add(list);
 
         StartStop startStop;
         startStop = new StartStop(tetrisBase);

@@ -10,8 +10,8 @@ public class NextPentomino extends JPanel {
 
         this.piece = piece;
 
-        setBackground(Color.BLUE);
-        setPreferredSize(new Dimension(200, 200));
+        setBackground(new Color(150,150,150));
+        setPreferredSize(new Dimension(250, 200));
 
         JLabel text = new JLabel("Next Pentomino:");
         add(text);
@@ -29,7 +29,7 @@ public class NextPentomino extends JPanel {
         int x = (getWidth() - width * size) / 2;
         int y = (getHeight() - height * size) / 2;
 
-        g.setColor(Color.GRAY);
+        g.setColor(new Color(150,150,150));
         g.drawRect(x, y, width * size, height * size);
         for (int i = 1; i < height; i++) {
             int yPos = y + i * size;

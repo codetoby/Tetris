@@ -15,6 +15,10 @@ public class StartStop extends JPanel {
         setLayout(new BorderLayout());
         JButton button = new JButton("Start Stop");
 
+        button.setBorderPainted(false);
+        button.setBackground(new Color(200,200,200));
+        button.setFocusPainted(true);
+
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

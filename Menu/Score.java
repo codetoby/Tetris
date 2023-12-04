@@ -10,8 +10,8 @@ public class Score extends JPanel {
 
     public Score() {
     
-        setBackground(Color.GREEN);
-        setPreferredSize(new Dimension(100, 75));
+        setBackground(new Color(150,150,150));
+        setPreferredSize(new Dimension(122, 75));
         setLayout(new GridBagLayout());
 
         GridBagConstraints gbc = new GridBagConstraints();

@@ -17,7 +17,7 @@ public class HighScoreList extends JPanel {
     }
 
     public HighScoreList() {
-        setBackground(Color.GREEN);
+        setBackground(new Color(150,150,150));
         setPreferredSize(new Dimension(250, 300));
         setLayout(new FlowLayout());
 
@@ -30,11 +30,11 @@ public class HighScoreList extends JPanel {
 
         for (String name : names) {
             int score = highScoreList.get(name);
-            text = name + " " + score;
+            text = " "+ name + " " + score;
             JLabel label = new JLabel(text);
             label.setOpaque(true);
-            label.setBackground(Color.RED);
-            label.setPreferredSize(new Dimension(200, 50));
+            label.setBackground(new Color(200, 200, 200));
+            label.setPreferredSize(new Dimension(170, 50));
             add(label);
         }
 

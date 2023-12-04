@@ -40,7 +40,9 @@ public abstract class TetrisBase extends JPanel {
 
     public void initilize() {
         startingMenu.setSize(width + WIDTHMENU, height + size);
+        startingMenu.setResizable(false);
         setPreferredSize(new Dimension(width + WIDTHMENU, height));
+        setMaximumSize(new Dimension(width + WIDTHMENU, height));
         setVisible(true);
         requestFocusInWindow();
         setFocusable(true);
@@ -67,6 +69,7 @@ public abstract class TetrisBase extends JPanel {
                 updateGame();
             }
         });
+        timer.setRepeats(false);
         timer.start();
 
     }
@@ -104,6 +107,13 @@ public abstract class TetrisBase extends JPanel {
                     field[line][l] = -1;
                 }
                 cascadeGravity(field);
+
+                Timer delay = new Timer(100, null);
+                delay.setRepeats(false);
+                delay.start();
+                while(delay.isRunning());
+                grid.setGrid(field, index);
+
                 checkForFullLines(field);
 
                 menu.score.incrementScore();
