@@ -22,12 +22,6 @@ public class HighScoreList extends JPanel {
     
     public static HashMap<String, Integer> highScoreList = new HashMap<>();
 
-    static {
-        highScoreList.put("Toby", 10);
-        highScoreList.put("Luke", 30);
-        highScoreList.put("Mical", 20);
-    }
-
     public HighScoreList() {
         setBackground(new Color(150,150,150));
         setPreferredSize(new Dimension(250, 300));
