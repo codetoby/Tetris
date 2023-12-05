@@ -21,11 +21,7 @@ public abstract class TetrisBase extends JPanel {
     public final int WIDTHMENU = 300;
     public int nextId;
     public int[][] nextPiece;
-    // public char[] input = { 'N', 'V', 'L', 'P', 'X', 'I', 'W', 'F', 'Y', 'Z', 'U', 'T' };
-    // public char[] input = {'I', 'N', 'Y', 'T', 'Z', 'U', 'P', 'F', 'V', 'L', 'W', 'X'};
-    char[] input = {'L', 'Y', 'F', 'U', 'V', 'P', 'T', 'N', 'W', 'I', 'Z', 'X'};
-
-
+    public char[] input = { 'N', 'V', 'L', 'P', 'X', 'I', 'W', 'F', 'Y', 'Z', 'U', 'T' };
     public int index = 0;
     public int tempEntryY = entryY;
     public int tempEntryX = entryX;
