@@ -161,30 +161,31 @@ public abstract class TetrisBase extends JPanel {
     }
 
     public ArrayList<int[]> getAdjesentPieces(int x, int y, int[][] board) {
-        ArrayList<int[]> ressult = new ArrayList<int[]>();
+        ArrayList<int[]> result = new ArrayList<int[]>();
         boolean[][] visitedSpaces = new boolean[board.length][board[0].length];
         // loop over each x and y position of the board
         if (!visitedSpaces[x][y] && board[x][y] != -1) {
             // count the connecting spaces with -1 for each cluster
-            ressult = countConnectingSpaces(board, visitedSpaces, x, y);
-            System.out.println(ressult.size());
+            result = countConnectingSpaces(board, visitedSpaces, x, y);
+            System.out.println(result.size());
 
         }
-        return ressult;
+        return result;
     }
 
     public static ArrayList<int[]> countConnectingSpaces(int[][] board, boolean[][] visitedSpaces, int x, int y) {
         ArrayList<int[]>shape = new ArrayList<>();
-
         // all the possible direction we can go
         int[][] possibleDirection = { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
-
+        
         // check if the position is in the board, is an empty space and we did not
         // visited it already
         if (y + 1 > board[0].length || y < 0 || x < 0 || x + 1 > board.length || board[x][y] == -1
-                || visitedSpaces[x][y] == true) {
-            return new ArrayList<>();
+        || visitedSpaces[x][y] == true) {
+            return shape;
         }
+        int[] position = {x,y};
+        shape.add(position);
 
         // set positon to visited
         visitedSpaces[x][y] = true;
