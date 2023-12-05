@@ -63,7 +63,6 @@ public abstract class TetrisBase extends JPanel {
 
         nextPiece(index);
 
-        // int count = 0;
         timer = new Timer(delay, new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 updateGame();
@@ -92,6 +91,7 @@ public abstract class TetrisBase extends JPanel {
         return false;
     }
 
+   
     public void checkForFullLines(int[][] field) {
         for (int k = field.length - 1; k >= 0; k--) {
             boolean full = true;
@@ -106,7 +106,7 @@ public abstract class TetrisBase extends JPanel {
                 for (int l = 0; l < field[0].length; l++) {
                     field[line][l] = -1;
                 }
-                cascadeGravity(field);
+                cascadeGravity(field, line);
                 grid.setGrid(field, index);
                 checkForFullLines(field);
 
@@ -115,11 +115,11 @@ public abstract class TetrisBase extends JPanel {
         }
     }
 
-    public void cascadeGravity(int[][] board) {
+    public void cascadeGravity(int[][] board, int line) {
         int rows = board.length;
         int cols = board[0].length;
 
-        for (int i = rows - 1; i >= 0; i--) {
+        for (int i = line; i >= 0; i--) {
             for (int j = 0; j < cols; j++) {
                 if (board[i][j] != -1) {
                     int x = i;

@@ -1,15 +1,15 @@
-import java.util.Arrays;
-
-public class BotGame extends TetrisBase {
+public class ExperimentBot extends TetrisBase {
 
     private int[][][] currentPermutation;
     private Bot bot;
+    private int pieceCounter;
+    public int scoreCounter = 0;
 
-    public BotGame(int width, int height, int size, StartingMenu startingMenu) {
-        super(width, height, size, startingMenu, 100);  
-        bot = new Bot();
-
-        Utils.shuffleArray(input);
+    public ExperimentBot(int width, int height, int size, StartingMenu startingMenu, Bot bot, char[] input) {
+        super(width, height, size, startingMenu, 10);  
+        this.bot = bot;
+        this.input = input;
+        this.pieceCounter = 0;
     }
 
     @Override
@@ -17,8 +17,10 @@ public class BotGame extends TetrisBase {
         handlePieceMovement();
     }
 
-    private void handlePieceMovement() {
-
+    public void handlePieceMovement() {
+        if (pieceCounter == input.length) {
+            timer.stop();
+        }
         clearBoard(field, prevPiece, tempEntryX, tempEntryY, id);
         tempEntryY = entryY;
         tempEntryX = entryX;
@@ -29,12 +31,12 @@ public class BotGame extends TetrisBase {
 
         if (entryX + piece.length > (height / size) || checkCollision(field, piece, entryX, entryY, id)) {
             placePieceOnField(piece, field);
+            pieceCounter++;
             grid.setGrid(field, id);
-            checkForFullLines(field);
 
+            checkForFullLines(field);
             if (checkGameEnds(field, id)) {
                 timer.stop();
-                return;
             }
             prepareNextPiece();
         } else {
@@ -47,6 +49,38 @@ public class BotGame extends TetrisBase {
         index = (index + 1) % input.length;
         resetPosition();
         nextPiece(index);
+    }
+
+    @Override
+    public void checkForFullLines(int[][] field) {
+        // Utils.printMatrix(field);
+        grid.setGrid(field, id);
+        // pieceTimer.stop();
+
+        for (int k = field.length - 1; k >= 0; k--) {
+            boolean full = true;
+            for (int j = 0; j < field[0].length; j++) {
+                if (field[k][j] == -1) {
+                    full = false;
+                    break;
+                }
+            }
+            if (full) {
+                final int line = k;
+                for (int l = 0; l < field[0].length; l++) {
+                    field[line][l] = -1;
+                }
+
+                grid.setGrid(field, id);
+                cascadeGravity(field, line);
+                grid.setGrid(field, id);
+                checkForFullLines(field);
+                menu.score.incrementScore();
+
+                this.scoreCounter += 1;
+        
+            }
+        }
     }
 
 

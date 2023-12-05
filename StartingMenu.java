@@ -10,6 +10,7 @@ public class StartingMenu extends JFrame {
     private int size;
     private BotGame botVersion;
     private TetrisGame humanVersion;
+    private Experiments experiments;
 
     public StartingMenu(int width, int height, int size) {
         this.width = (width * size);
@@ -32,6 +33,7 @@ public class StartingMenu extends JFrame {
 
         botVersion = new BotGame(width, height, size, this);
         humanVersion = new TetrisGame(width, height, size, this); 
+        experiments = new Experiments(width, height, size, this);
 
      
         JButton botVersionButton = new JButton("Launch Tetris Bot");
@@ -45,6 +47,21 @@ public class StartingMenu extends JFrame {
                 switchToPanel(botVersion);
                 botVersion.initilize();
             }
+        });
+
+        JButton botExperiments = new JButton("Bot Experiments");
+        botExperiments.setBorderPainted(false);
+        botExperiments.setBackground(new Color(200,200,200));
+        botExperiments.setPreferredSize(new Dimension(184, 30));
+        botExperiments.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setResizable(true);
+                setVisible(false);
+                experiments.setVisible(true);
+                experiments.initialize();
+            }
+            
         });
 
         JButton humanVesrionButton = new JButton("Launch Tetris Game");
@@ -70,6 +87,7 @@ public class StartingMenu extends JFrame {
         add(list);
         add(botVersionButton);
         add(humanVesrionButton);
+        add(botExperiments);
         setVisible(true);
     }
 

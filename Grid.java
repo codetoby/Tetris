@@ -86,7 +86,6 @@ public class Grid extends JPanel {
     }
 
     public void setGrid(int[][] _grid, int _id) {
-        // this.emptySpaces = emptySpaces;
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length; j++) {
                 this.grid[i][j] = _grid[i][j];
