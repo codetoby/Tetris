@@ -199,8 +199,6 @@ public class Bot {
             }
         }
 
-        System.out.println(maxScore);
-
         return new BestPosition(bestX - bestPiece.length + 1, bestY - adj, bestPiece, (int) maxScore, emptySpaces);
     }
 
