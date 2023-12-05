@@ -10,7 +10,6 @@ public class BotGame extends TetrisBase {
         bot = new Bot();
 
         Utils.shuffleArray(input);
-        System.out.println(Arrays.toString(input));
     }
 
     @Override
@@ -19,6 +18,7 @@ public class BotGame extends TetrisBase {
     }
 
     private void handlePieceMovement() {
+
         clearBoard(field, prevPiece, tempEntryX, tempEntryY, id);
         tempEntryY = entryY;
         tempEntryX = entryX;
@@ -30,10 +30,8 @@ public class BotGame extends TetrisBase {
         if (entryX + piece.length > (height / size) || checkCollision(field, piece, entryX, entryY, id)) {
             placePieceOnField(piece, field);
             grid.setGrid(field, id);
-
-            // prepareNextPiece();
             checkForFullLines(field);
-            // grid.setGrid(field, id);
+
             if (checkGameEnds(field, id)) {
                 timer.stop();
                 return;
@@ -50,41 +48,6 @@ public class BotGame extends TetrisBase {
         resetPosition();
         nextPiece(index);
     }
-
-    
-    // public void checkForFullLine(int[][] field) {
-    //     // Utils.printMatrix(field);
-    //     grid.setGrid(field, id);
-    //     // pieceTimer.stop();
-
-    //     for (int k = field.length - 1; k >= 0; k--) {
-    //         boolean full = true;
-    //         for (int j = 0; j < field[0].length; j++) {
-    //             if (field[k][j] == -1) {
-    //                 full = false;
-    //                 break;
-    //             }
-    //         }
-    //         if (full) {
-    //             final int line = k;
-    //             for (int l = 0; l < field[0].length; l++) {
-    //                 field[line][l] = -1;
-    //             }
-
-    //             // Timer delay = new Timer(200, e -> {
-    //             grid.setGrid(field, id);
-    //             cascadeGravity(field, line);
-    //             grid.setGrid(field, id);
-    //             checkForFullLines(field);
-    //             menu.score.incrementScore();
-        
-    //             // delay.setRepeats(false);
-    //             // delay.start();
-    //             // while(delay.isRunning());
-    //             // pieceTimer.start();
-    //         }
-    //     }
-    // }
 
 
     @Override
