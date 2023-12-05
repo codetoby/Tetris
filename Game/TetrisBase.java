@@ -1,6 +1,8 @@
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.LinkedList;
 
 import javax.swing.*;
 
@@ -91,7 +93,6 @@ public abstract class TetrisBase extends JPanel {
         return false;
     }
 
-   
     public void checkForFullLines(int[][] field) {
         for (int k = field.length - 1; k >= 0; k--) {
             boolean full = true;
@@ -106,7 +107,9 @@ public abstract class TetrisBase extends JPanel {
                 for (int l = 0; l < field[0].length; l++) {
                     field[line][l] = -1;
                 }
-                cascadeGravity(field, line);
+                // cascadeGravity(field, line);
+                // simpleGravity(field, line);
+                gravity(field, line);
                 grid.setGrid(field, index);
                 checkForFullLines(field);
 
@@ -135,17 +138,82 @@ public abstract class TetrisBase extends JPanel {
         }
     }
 
+    public void simpleGravity(int[][] board, int line) {
+        int cols = board[0].length;
+        for (int i = line - 1; i >= 0; i--) {
+            for (int j = 0; j < cols; j++) {
+                if (board[i][j] != -1) {
+                    board[i + 1][j] = board[i][j];
+                    board[i][j] = -1;
+                }
+            }
+        }
+    }
+
+    public void gravity(int[][] board, int line) {
+        int cols = board[0].length;
+        ArrayList<Integer> visited = new ArrayList<>();
+        for (int j = 0; j < cols; j++) {
+            if (board[line - 1][j] != -1) {
+                getAdjesentPieces(line-1, j, board);
+            }
+        }
+    }
+
+    public ArrayList<int[]> getAdjesentPieces(int x, int y, int[][] board) {
+        ArrayList<int[]> ressult = new ArrayList<int[]>();
+        boolean[][] visitedSpaces = new boolean[board.length][board[0].length];
+        // loop over each x and y position of the board
+        if (!visitedSpaces[x][y] && board[x][y] != -1) {
+            // count the connecting spaces with -1 for each cluster
+            ressult = countConnectingSpaces(board, visitedSpaces, x, y);
+            System.out.println(ressult.size());
+
+        }
+        return ressult;
+    }
+
+    public static ArrayList<int[]> countConnectingSpaces(int[][] board, boolean[][] visitedSpaces, int x, int y) {
+        ArrayList<int[]>shape = new ArrayList<>();
+
+        // all the possible direction we can go
+        int[][] possibleDirection = { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
+
+        // check if the position is in the board, is an empty space and we did not
+        // visited it already
+        if (y + 1 > board[0].length || y < 0 || x < 0 || x + 1 > board.length || board[x][y] == -1
+                || visitedSpaces[x][y] == true) {
+            return new ArrayList<>();
+        }
+
+        // set positon to visited
+        visitedSpaces[x][y] = true;
+
+        // goes over each possible direction
+        for (int i = 0; i < possibleDirection.length; i++) {
+            // for each direction we call the function again with the updated x and y
+            // position and add the counted spaces
+
+            shape.addAll(countConnectingSpaces(board, visitedSpaces, x + possibleDirection[i][0],
+                y + possibleDirection[i][1])
+                ); 
+        }
+
+        return shape;
+
+    }
+
     public boolean checkCollision(int[][] field, int[][] piece, int x, int y, int id) {
         for (int i = 0; i < piece.length; i++) {
             for (int j = 0; j < piece[i].length; j++) {
                 if (piece[i][j] == 1) {
                     int fieldX = x + i + 1;
                     int fieldY = y + j;
-    
+
                     if (fieldX < 0 || fieldX >= field.length || fieldY < 0 || fieldY >= field[0].length) {
                         return true;
                     }
-    
+
                     if (field[fieldX][fieldY] != -1 && field[fieldX][fieldY] != id) {
                         return true;
                     }
@@ -154,7 +222,6 @@ public abstract class TetrisBase extends JPanel {
         }
         return false;
     }
-    
 
     public void clearBoard(int[][] field, int[][] piece, int prevX, int prevY, int id) {
         for (int i = 0; i < piece.length; i++) {
