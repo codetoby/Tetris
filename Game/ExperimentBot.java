@@ -1,16 +1,19 @@
 import java.util.Arrays;
 
-public class BotGame extends TetrisBase {
+public class ExperimentBot extends TetrisBase {
 
     private int[][][] currentPermutation;
     private Bot bot;
+    private int pieceCounter;
+    private int scoreCounter;
 
-    public BotGame(int width, int height, int size, StartingMenu startingMenu) {
+    public ExperimentBot(int width, int height, int size, StartingMenu startingMenu, Bot bot, char[] input) {
         super(width, height, size, startingMenu, 100);  
-        bot = new Bot();
-
-        Utils.shuffleArray(input);
-        System.out.println(Arrays.toString(input));
+        this.bot = bot;
+        this.input = input;
+        this.pieceCounter = 0;
+        // WUtils.shuffleArray(input);
+        // System.out.println(Arrays.toString(input));
     }
 
     @Override
@@ -18,7 +21,10 @@ public class BotGame extends TetrisBase {
         handlePieceMovement();
     }
 
-    private void handlePieceMovement() {
+    public void handlePieceMovement() {
+        if (pieceCounter == input.length) {
+            timer.stop();
+        }
         clearBoard(field, prevPiece, tempEntryX, tempEntryY, id);
         tempEntryY = entryY;
         tempEntryX = entryX;
@@ -29,6 +35,7 @@ public class BotGame extends TetrisBase {
 
         if (entryX + piece.length > (height / size) || checkCollision(field, piece, entryX, entryY, id)) {
             placePieceOnField(piece, field);
+            pieceCounter++;
             grid.setGrid(field, id);
 
             // prepareNextPiece();
@@ -51,40 +58,37 @@ public class BotGame extends TetrisBase {
         nextPiece(index);
     }
 
-    
-    // public void checkForFullLine(int[][] field) {
-    //     // Utils.printMatrix(field);
-    //     grid.setGrid(field, id);
-    //     // pieceTimer.stop();
+    @Override
+    public void checkForFullLines(int[][] field) {
+        // Utils.printMatrix(field);
+        grid.setGrid(field, id);
+        // pieceTimer.stop();
 
-    //     for (int k = field.length - 1; k >= 0; k--) {
-    //         boolean full = true;
-    //         for (int j = 0; j < field[0].length; j++) {
-    //             if (field[k][j] == -1) {
-    //                 full = false;
-    //                 break;
-    //             }
-    //         }
-    //         if (full) {
-    //             final int line = k;
-    //             for (int l = 0; l < field[0].length; l++) {
-    //                 field[line][l] = -1;
-    //             }
+        for (int k = field.length - 1; k >= 0; k--) {
+            boolean full = true;
+            for (int j = 0; j < field[0].length; j++) {
+                if (field[k][j] == -1) {
+                    full = false;
+                    break;
+                }
+            }
+            if (full) {
+                final int line = k;
+                for (int l = 0; l < field[0].length; l++) {
+                    field[line][l] = -1;
+                }
 
-    //             // Timer delay = new Timer(200, e -> {
-    //             grid.setGrid(field, id);
-    //             cascadeGravity(field, line);
-    //             grid.setGrid(field, id);
-    //             checkForFullLines(field);
-    //             menu.score.incrementScore();
+                grid.setGrid(field, id);
+                cascadeGravity(field, line);
+                grid.setGrid(field, id);
+                checkForFullLines(field);
+                menu.score.incrementScore();
+
+                this.scoreCounter++;
         
-    //             // delay.setRepeats(false);
-    //             // delay.start();
-    //             // while(delay.isRunning());
-    //             // pieceTimer.start();
-    //         }
-    //     }
-    // }
+            }
+        }
+    }
 
 
     @Override

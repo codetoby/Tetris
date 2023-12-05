@@ -3,9 +3,9 @@ import javax.swing.JFrame;
 
 public class Bot {
 
-    public static ArrayList<EmptySpace> emptySpaces;
-
     public static void main(String[] args) {
+
+        Bot bot = new Bot();
 
         int[][] board = new int[15][5];
 
@@ -41,16 +41,14 @@ public class Bot {
         int id = Utils.characterToID('L');
         int[][][] permuations = PentominosDatabase.data[id];
 
-        BestPosition bestpos = computeScore(board, permuations);
-        int totalScore = calculatePoints(board);
+        BestPosition bestpos = bot.computeScore(board, permuations);
+        int totalScore = bot.calculatePoints(board);
         System.out.println(totalScore);
         System.out.println("Amount of permutations: " + permuations.length);
         int bestX = bestpos.x;
         int bestY = bestpos.y;
         int[][] bestPiece = bestpos.piece;
         int maxScore = bestpos.score;
-
-        
 
         System.out.println("Best Position (x, y): (" + bestX + "," + bestY + ")");
         System.out.println("Best Score: " + (totalScore - maxScore));
@@ -65,9 +63,28 @@ public class Bot {
         frame.setResizable(true);
         Grid grid = new Grid(50, width, height * 50, board);
         frame.add(grid);
-        addPiece(board, bestPiece, 2, bestX, bestY);
-        grid.setGrid(board, 2, emptySpaces);
+        bot.addPiece(board, bestPiece, 2, bestX, bestY);
+        grid.setGrid(board, 2, bot.emptySpaces);
         frame.setVisible(true);
+        
+    }
+    
+    private ArrayList<EmptySpace> emptySpaces;
+    private double weightClearLines;
+    private double weightDeadspaces;
+    private double weightHeightDifference;
+
+    public Bot() {
+        this.weightClearLines = 1;
+        this.weightDeadspaces = 0.25;
+        this.weightHeightDifference = 0.5;
+    }
+
+    
+    public Bot(double weightClearLines, double weightDeadspaces, double weightHeightDifference) {
+        this.weightClearLines = weightClearLines;
+        this.weightDeadspaces = weightDeadspaces;
+        this.weightHeightDifference = weightHeightDifference;
     }
 
     /**
@@ -77,7 +94,7 @@ public class Bot {
      * @param board game board
      * @return total score of every position
      */
-    public static int calculatePoints(int[][] board) {
+    public int calculatePoints(int[][] board) {
 
         emptySpaces = new ArrayList<>();
 
@@ -102,9 +119,6 @@ public class Bot {
                                 score += 1;
                             }
                         }
-                        // } else if (i == rows - 1) {
-                        // score += 1;
-                        // }
 
                     }
                     if (((j == 0 || j == cols - 1) && i != 0) || i == rows - 1) {
@@ -128,7 +142,7 @@ public class Bot {
      * @param y position
      * @return score of the position (x,y)
      */
-    public static int getScoreFromPosition(int x, int y) {
+    public int getScoreFromPosition(int x, int y) {
         for (int i = 0; i < emptySpaces.size(); i++) {
             EmptySpace space = emptySpaces.get(i);
             if (space.x == x && space.y == y) {
@@ -145,7 +159,7 @@ public class Bot {
      * @param board game board
      * @param data  all permutation of a piece
      */
-    public static BestPosition computeScore(int[][] board, int[][][] data) {
+    public BestPosition computeScore(int[][] board, int[][][] data) {
 
         int totalScore = calculatePoints(board);
         double maxScore = totalScore;
@@ -185,7 +199,9 @@ public class Bot {
             }
         }
 
-        return new BestPosition(bestX - bestPiece.length + 1, bestY - adj, bestPiece, (int) maxScore);
+        System.out.println(maxScore);
+
+        return new BestPosition(bestX - bestPiece.length + 1, bestY - adj, bestPiece, (int) maxScore, emptySpaces);
     }
 
     /**
@@ -198,7 +214,7 @@ public class Bot {
      * @param board game board
      * @return total score for the specific position
      */
-    public static double checkIfPieceFitsIn(int x, int y, int[][] piece, int[][] board) {
+    public double checkIfPieceFitsIn(int x, int y, int[][] piece, int[][] board) {
         int rows = piece.length;
         int cols = piece[0].length;
         int adj = 0;
@@ -243,12 +259,15 @@ public class Bot {
         // // count deadspaces
         int deadspaces = countDeadSpace(_board);
 
-        totalScore += 2 * fullRows - .5 * diffrence - 0.125 * deadspaces;
+        totalScore += weightClearLines * fullRows; 
+        totalScore -= weightHeightDifference * diffrence;
+        totalScore -= weightDeadspaces * deadspaces;
 
         return totalScore;
     }
 
-    public static int countDeadSpace(int[][] board) {
+
+    public int countDeadSpace(int[][] board) {
 
         int rows = board.length;
         int cols = board[0].length;
@@ -266,7 +285,7 @@ public class Bot {
         return deadspaces;
     }
 
-    public static int checkSpace(int[][] board, int boardHeight, int boardWidth, int i, int j) {
+    public int checkSpace(int[][] board, int boardHeight, int boardWidth, int i, int j) {
 
         int[][] directions = {
                 { 1, 0 },
@@ -289,7 +308,28 @@ public class Bot {
         return 1;
     }
 
-    public static int firstEmptyRowFromBottom(int[][] board) {
+    public void checkForFullLines(int[][] field) {
+        for (int k = field.length - 1; k >= 0; k--) {
+            boolean full = true;
+            int line = k;
+            for (int j = 0; j < field[0].length; j++) {
+                if (field[k][j] == -1) {
+                    full = false;
+                    break;
+                }
+            }
+            if (full == true) {
+                for (int l = 0; l < field[0].length; l++) {
+                    field[line][l] = -1;
+                }
+                cascadeGravity(field, line);
+                checkForFullLines(field);
+
+            }
+        }
+    }
+
+    public int firstEmptyRowFromBottom(int[][] board) {
 
         int rows = board.length;
         int cols = board[0].length;
@@ -304,24 +344,50 @@ public class Bot {
         return rows;
     }
 
-    public static int countFullRows(int[][] field) {
+    public int countFullRows(int[][] field) {
         int fullRows = 0;
         for (int k = field.length - 1; k >= 0; k--) {
             boolean full = true;
+            int line = k;
             for (int j = 0; j < field[0].length; j++) {
                 if (field[k][j] == -1) {
                     full = false;
                     break;
                 }
             }
-            if (full) {
+            if (full == true) {
+                for (int l = 0; l < field[0].length; l++) {
+                    field[line][l] = -1;
+                }
+                cascadeGravity(field, line);
+                countFullRows(field);
                 fullRows += 1;
             }
         }
         return fullRows;
     }
 
-    public static void addPiece(int[][] field, int[][] piece, int pieceID, int x, int y) {
+    public void cascadeGravity(int[][] board, int line) {
+        int rows = board.length;
+        int cols = board[0].length;
+
+        for (int i = line; i >= 0; i--) {
+            for (int j = 0; j < cols; j++) {
+                if (board[i][j] != -1) {
+                    int x = i;
+                    while (x < rows - 1 && board[x + 1][j] == -1) {
+                        x++;
+                    }
+                    if (x != i) {
+                        board[x][j] = board[i][j];
+                        board[i][j] = -1;
+                    }
+                }
+            }
+        }
+    }
+
+    public void addPiece(int[][] field, int[][] piece, int pieceID, int x, int y) {
         for (int i = 0; i < piece.length; i++) {
             for (int j = 0; j < piece[i].length; j++) {
                 if (piece[i][j] == 1) {
