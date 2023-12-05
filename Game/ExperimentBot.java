@@ -1,19 +1,15 @@
-import java.util.Arrays;
-
 public class ExperimentBot extends TetrisBase {
 
     private int[][][] currentPermutation;
     private Bot bot;
     private int pieceCounter;
-    private int scoreCounter;
+    public int scoreCounter = 0;
 
     public ExperimentBot(int width, int height, int size, StartingMenu startingMenu, Bot bot, char[] input) {
-        super(width, height, size, startingMenu, 100);  
+        super(width, height, size, startingMenu, 10);  
         this.bot = bot;
         this.input = input;
         this.pieceCounter = 0;
-        // WUtils.shuffleArray(input);
-        // System.out.println(Arrays.toString(input));
     }
 
     @Override
@@ -38,12 +34,9 @@ public class ExperimentBot extends TetrisBase {
             pieceCounter++;
             grid.setGrid(field, id);
 
-            // prepareNextPiece();
             checkForFullLines(field);
-            // grid.setGrid(field, id);
             if (checkGameEnds(field, id)) {
                 timer.stop();
-                return;
             }
             prepareNextPiece();
         } else {
@@ -84,7 +77,7 @@ public class ExperimentBot extends TetrisBase {
                 checkForFullLines(field);
                 menu.score.incrementScore();
 
-                this.scoreCounter++;
+                this.scoreCounter += 1;
         
             }
         }
