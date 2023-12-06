@@ -2,6 +2,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.LinkedList;
 
 import javax.swing.*;
@@ -152,52 +154,57 @@ public abstract class TetrisBase extends JPanel {
 
     public void gravity(int[][] board, int line) {
         int cols = board[0].length;
-        ArrayList<Integer> visited = new ArrayList<>();
+        ArrayList<ArrayList<int[]>> visited = new ArrayList<>();
         for (int j = 0; j < cols; j++) {
             if (board[line - 1][j] != -1) {
-                getAdjesentPieces(line-1, j, board);
+                int[] xy = { line - 1, j };
+                ArrayList<int[]> sorted = getAdjesentPieces(line - 1, j, board);
+                sorted.sort(Comparator.comparingInt((int[] arr) -> arr[0])
+                        .thenComparingInt(arr -> arr[1]));
+                if (!visited.stream().anyMatch(inner -> inner.size() == sorted.size() && inner.stream().allMatch(arr -> Arrays.equals(arr, sorted.get(inner.indexOf(arr)))))) {
+                    visited.add(sorted);
+                }
             }
         }
+        for (ArrayList<int[]> arrayList : visited) {
+            ArrayList<int[]> cordsUnderTheShape= GravityUtil.xyUnderShape(arrayList);
+            for (int[] cords : cordsUnderTheShape) {
+                System.out.print(Arrays.toString(cords));
+                
+            }
+            System.out.println("  "+ GravityUtil.canMoveDown(board, arrayList));
+            if(GravityUtil.canMoveDown(board, cordsUnderTheShape)) GravityUtil.moveShapeDown(board, arrayList);
+        }
     }
+
 
     public ArrayList<int[]> getAdjesentPieces(int x, int y, int[][] board) {
         ArrayList<int[]> result = new ArrayList<int[]>();
         boolean[][] visitedSpaces = new boolean[board.length][board[0].length];
-        // loop over each x and y position of the board
         if (!visitedSpaces[x][y] && board[x][y] != -1) {
-            // count the connecting spaces with -1 for each cluster
             result = countConnectingSpaces(board, visitedSpaces, x, y);
-            System.out.println(result.size());
 
         }
         return result;
     }
 
     public static ArrayList<int[]> countConnectingSpaces(int[][] board, boolean[][] visitedSpaces, int x, int y) {
-        ArrayList<int[]>shape = new ArrayList<>();
-        // all the possible direction we can go
+        ArrayList<int[]> shape = new ArrayList<>();
+
         int[][] possibleDirection = { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
-        
-        // check if the position is in the board, is an empty space and we did not
-        // visited it already
+
         if (y + 1 > board[0].length || y < 0 || x < 0 || x + 1 > board.length || board[x][y] == -1
-        || visitedSpaces[x][y] == true) {
+                || visitedSpaces[x][y] == true) {
             return shape;
         }
-        int[] position = {x,y};
+        int[] position = { x, y };
         shape.add(position);
 
-        // set positon to visited
         visitedSpaces[x][y] = true;
 
-        // goes over each possible direction
         for (int i = 0; i < possibleDirection.length; i++) {
-            // for each direction we call the function again with the updated x and y
-            // position and add the counted spaces
-
             shape.addAll(countConnectingSpaces(board, visitedSpaces, x + possibleDirection[i][0],
-                y + possibleDirection[i][1])
-                ); 
+                    y + possibleDirection[i][1]));
         }
 
         return shape;
