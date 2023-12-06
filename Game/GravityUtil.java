@@ -26,7 +26,7 @@ public class GravityUtil {
     }
 
     public static void moveShapeDown(int[][] board, ArrayList<int[]> shape) {
-        shape.sort(Comparator.comparingInt((int[] arr) -> arr[1]));
+        shape.sort(Comparator.comparingInt((int[] arr) -> arr[0]).reversed());
         for (int[] xy : shape) {
             System.out.println(Arrays.toString(xy));
             board[xy[0]+1][xy[1]] = board[xy[0]][xy[1]];
