@@ -156,8 +156,7 @@ public abstract class TetrisBase extends JPanel {
         int cols = board[0].length;
         ArrayList<ArrayList<int[]>> visited = new ArrayList<>();
         for (int j = 0; j < cols; j++) {
-            if (board[line - 1][j] != -1) {
-                int[] xy = { line - 1, j };
+            if (line >0 || board[line - 1][j] != -1) {
                 ArrayList<int[]> sorted = getAdjesentPieces(line - 1, j, board);
                 sorted.sort(Comparator.comparingInt((int[] arr) -> arr[0])
                         .thenComparingInt(arr -> arr[1]));
@@ -168,12 +167,13 @@ public abstract class TetrisBase extends JPanel {
         }
         for (ArrayList<int[]> arrayList : visited) {
             ArrayList<int[]> cordsUnderTheShape= GravityUtil.xyUnderShape(arrayList);
-            for (int[] cords : cordsUnderTheShape) {
-                System.out.print(Arrays.toString(cords));
-                
+            while (GravityUtil.canMoveDown(board, cordsUnderTheShape)) {
+                GravityUtil.moveShapeDown(board, arrayList);
+                if (!arrayList.isEmpty()) {
+                    arrayList.forEach(arr -> arr[0]++);
+                }else break;
+                cordsUnderTheShape = GravityUtil.xyUnderShape(arrayList);
             }
-            System.out.println("  "+ GravityUtil.canMoveDown(board, arrayList));
-            if(GravityUtil.canMoveDown(board, cordsUnderTheShape)) GravityUtil.moveShapeDown(board, arrayList);
         }
     }
 

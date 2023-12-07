@@ -28,7 +28,9 @@ public class GravityUtil {
     public static void moveShapeDown(int[][] board, ArrayList<int[]> shape) {
         shape.sort(Comparator.comparingInt((int[] arr) -> arr[0]).reversed());
         for (int[] xy : shape) {
-            System.out.println(Arrays.toString(xy));
+            if (xy[0]+1>= board.length) {
+                return;
+            }
             board[xy[0]+1][xy[1]] = board[xy[0]][xy[1]];
             board[xy[0]][xy[1]] = -1;
         }
@@ -38,7 +40,10 @@ public class GravityUtil {
     public static boolean canMoveDown(int[][] board, ArrayList<int[]> xyUnderShape){
         int rows = board.length;
         for (int[] is : xyUnderShape) {
-            if ( is[1] >= rows && board[is[0]][is[1]] == -1) {
+            if (is[0] >= rows) {
+                return false;
+            }
+            if (board[is[0]][is[1]] != -1) {
                 return false;
             }
         }
