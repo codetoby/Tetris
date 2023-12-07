@@ -6,7 +6,7 @@ public class ExperimentBot extends TetrisBase {
     public int scoreCounter = 0;
 
     public ExperimentBot(int width, int height, int size, StartingMenu startingMenu, Bot bot, char[] input) {
-        super(width, height, size, startingMenu, 10);  
+        super(width, height, size, startingMenu, 1);  
         this.bot = bot;
         this.input = input;
         this.pieceCounter = 0;
@@ -72,7 +72,7 @@ public class ExperimentBot extends TetrisBase {
                 }
 
                 grid.setGrid(field, id);
-                cascadeGravity(field, line);
+                gravity(field, line);
                 grid.setGrid(field, id);
                 checkForFullLines(field);
                 menu.score.incrementScore();
