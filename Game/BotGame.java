@@ -6,10 +6,10 @@ public class BotGame extends TetrisBase {
     private Bot bot;
 
     public BotGame(int width, int height, int size, StartingMenu startingMenu) {
-        super(width, height, size, startingMenu, 200);  
+        super(width, height, size, startingMenu, 20);  
         bot = new Bot();
 
-        Utils.shuffleArray(input);
+        //Utils.shuffleArray(input);
     }
 
     @Override
