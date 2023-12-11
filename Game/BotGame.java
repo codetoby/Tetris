@@ -6,8 +6,8 @@ public class BotGame extends TetrisBase {
     private Bot bot;
 
     public BotGame(int width, int height, int size, StartingMenu startingMenu) {
-        super(width, height, size, startingMenu, 50);  
-        bot = new Bot(0.25, 0, 0);
+        super(width, height, size, startingMenu, 10);  
+        bot = new Bot(0, 1.25, 0);
         
         // Utils.shuffleArray(input);
         System.out.println(Arrays.toString(input));
@@ -29,7 +29,7 @@ public class BotGame extends TetrisBase {
         grid.setGrid(field, id);
 
         if (entryX + piece.length > (height / size) || checkCollision(field, piece, entryX, entryY, id)) {
-            placePieceOnField(piece, field);
+            addPiece(field, piece, id, entryX, entryY);
             grid.setGrid(field, id);
             checkForFullLines(field);
 
