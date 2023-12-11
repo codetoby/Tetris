@@ -18,9 +18,9 @@ public class ExperimentBot extends TetrisBase {
     }
 
     public void handlePieceMovement() {
-        if (pieceCounter == input.length) {
-            timer.stop();
-        }
+        // if (pieceCounter == input.length) {
+        //     timer.stop();
+        // }
         clearBoard(field, prevPiece, tempEntryX, tempEntryY, id);
         tempEntryY = entryY;
         tempEntryX = entryX;
@@ -53,9 +53,7 @@ public class ExperimentBot extends TetrisBase {
 
     @Override
     public void checkForFullLines(int[][] field) {
-        // Utils.printMatrix(field);
         grid.setGrid(field, id);
-        // pieceTimer.stop();
 
         for (int k = field.length - 1; k >= 0; k--) {
             boolean full = true;
@@ -71,9 +69,7 @@ public class ExperimentBot extends TetrisBase {
                     field[line][l] = -1;
                 }
 
-                grid.setGrid(field, id);
                 gravity(field, line);
-                grid.setGrid(field, id);
                 checkForFullLines(field);
                 menu.score.incrementScore();
 
