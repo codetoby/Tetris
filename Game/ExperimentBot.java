@@ -30,7 +30,7 @@ public class ExperimentBot extends TetrisBase {
         grid.setGrid(field, id);
 
         if (entryX + piece.length > (height / size) || checkCollision(field, piece, entryX, entryY, id)) {
-            placePieceOnField(piece, field);
+            addPiece(field, piece, id, entryX, entryY);
             pieceCounter++;
             grid.setGrid(field, id);
 
