@@ -25,6 +25,8 @@ public abstract class TetrisBase extends JPanel {
     public final int WIDTHMENU = 300;
     public int nextId;
     public int[][] nextPiece;
+    // public char[] input = { 'N', 'V', 'L', 'P', 'X', 'I', 'W', 'F', 'Y', 'Z', 'U', 'T' };
+    // public char[] input = { 'I', 'X', 'Y', 'V', 'T', 'U', 'Z', 'N', 'F', 'P', 'W', 'L'};
     public char[] input = { 'N', 'V', 'L', 'P', 'X', 'I', 'W', 'F', 'Y', 'Z', 'U', 'T' };
     public int index = 0;
     public int tempEntryY = entryY;
@@ -156,7 +158,7 @@ public abstract class TetrisBase extends JPanel {
         int cols = board[0].length;
         ArrayList<ArrayList<int[]>> visited = new ArrayList<>();
         for (int j = 0; j < cols; j++) {
-            if (line >0 || board[line - 1][j] != -1) {
+            if (line > 0 || board[line - 1][j] != -1) {
                 ArrayList<int[]> sorted = getAdjesentPieces(line - 1, j, board);
                 sorted.sort(Comparator.comparingInt((int[] arr) -> arr[0])
                         .thenComparingInt(arr -> arr[1]));
