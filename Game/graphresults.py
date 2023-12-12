@@ -1,23 +1,34 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-xPoints = np.array([0.25, 0.5, 0.75, 1])
+# Original data points
+xPoints = np.array([0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75])
+# yPoints1 = np.array([24, 24, 24, 22, 22, 22, 22])
+# yPoints2 = np.array([16, 16, 16, 16, 16, 16, 16])
+# yPoints3 = np.array([19, 19, 19, 33, 22, 22, 22])
 
-yPoints1 = np.array([12, 12, 12, 12])
-yPoints2 = np.array([11, 11, 11, 11])
-yPoints3 = np.array([9, 10, 10, 10])
+yPoints1 = np.array([10, 10, 10, 9, 9, 9, 9])
+yPoints2 = np.array([9, 9, 9, 9, 9, 9, 9])
+yPoints3 = np.array([9, 9, 9, 8, 7, 7, 7])
 
-plt.title("Heuristic Steps\n Input: N, V, L, P, X, I, W, F, Y, Z, U, T")
+# Jittering: adding a small random noise to x coordinates
+jitter_strength =  0.01
+xPoints_jittered1 = xPoints + np.random.normal(0, jitter_strength, xPoints.size)
+xPoints_jittered2 = xPoints + np.random.normal(0, jitter_strength, xPoints.size)
+xPoints_jittered3 = xPoints + np.random.normal(0, jitter_strength, xPoints.size)
 
+# Plotting
+plt.title("Heuristic Steps\n Input: N, V, L, P, X, I, W, F, Y, Z, U, T\nScore after Placing 12 Pieces")
 plt.xlabel("Weight")
 plt.ylabel("Score")
-
 plt.xticks(xPoints)
-plt.ylim([0, 12.5])
+plt.ylim([6, 11])
 
-plt.scatter(xPoints, yPoints1)
-plt.scatter(xPoints, yPoints2)
-plt.scatter(xPoints, yPoints3)
+# Scatter plots with alpha blending
+plt.scatter(xPoints_jittered1, yPoints1, alpha=0.7)
+plt.scatter(xPoints_jittered2, yPoints2, alpha=0.7)
+plt.scatter(xPoints_jittered3, yPoints3, alpha=0.7)
+
 plt.legend(["Blue: Lines clearing", "Orange: Height Difference", "Green: Deadspaces"])
 plt.grid()
 plt.show()

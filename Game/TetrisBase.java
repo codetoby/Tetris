@@ -25,6 +25,8 @@ public abstract class TetrisBase extends JPanel {
     public final int WIDTHMENU = 300;
     public int nextId;
     public int[][] nextPiece;
+    // public char[] input = { 'N', 'V', 'L', 'P', 'X', 'I', 'W', 'F', 'Y', 'Z', 'U', 'T' };
+    // public char[] input = { 'I', 'X', 'Y', 'V', 'T', 'U', 'Z', 'N', 'F', 'P', 'W', 'L'};
     public char[] input = { 'N', 'V', 'L', 'P', 'X', 'I', 'W', 'F', 'Y', 'Z', 'U', 'T' };
     public int index = 0;
     public int tempEntryY = entryY;
@@ -153,10 +155,11 @@ public abstract class TetrisBase extends JPanel {
     }
 
     public void gravity(int[][] board, int line) {
+        if (line == 0) return;
         int cols = board[0].length;
         ArrayList<ArrayList<int[]>> visited = new ArrayList<>();
         for (int j = 0; j < cols; j++) {
-            if (line >0 || board[line - 1][j] != -1) {
+            if (line > 0 || board[line - 1][j] != -1) {
                 ArrayList<int[]> sorted = getAdjesentPieces(line - 1, j, board);
                 sorted.sort(Comparator.comparingInt((int[] arr) -> arr[0])
                         .thenComparingInt(arr -> arr[1]));
@@ -247,7 +250,11 @@ public abstract class TetrisBase extends JPanel {
         }
     }
 
-    public static void addPiece(int[][] field, int[][] piece, int pieceID, int x, int y) {
+    public void addPiece(int[][] field, int[][] piece, int pieceID, int x, int y) {
+        if (x < 0 || x + piece.length > field.length || y < 0 || y + piece[0].length > field[0].length) {
+            x = 0;
+            y = 0;
+        }
         for (int i = 0; i < piece.length; i++) {
             for (int j = 0; j < piece[i].length; j++) {
                 if (piece[i][j] == 1) {
@@ -256,6 +263,7 @@ public abstract class TetrisBase extends JPanel {
             }
         }
     }
+    
 
     public void placePieceOnField(int[][] piece, int[][] field) {
         for (int i = 0; i < piece.length; i++) {

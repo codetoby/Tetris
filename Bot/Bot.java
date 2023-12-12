@@ -5,7 +5,7 @@ public class Bot {
 
     public static void main(String[] args) {
 
-        Bot bot = new Bot();
+        Bot bot = new Bot(0, 1.25, 0);
 
         int[][] board = new int[15][5];
 
@@ -15,30 +15,21 @@ public class Bot {
             }
         }
 
-        board[14][0] = 1;
-        board[14][1] = 1;
-        board[14][2] = 1;
-        board[14][4] = 1;
+        board[1][3] = 1;
+        // board[2][0] = 1;
+        board[2][2] = 1;
+        board[2][3] = 1;
 
-        board[13][0] = 1;
-        board[13][2] = 1;
-        board[13][4] = 1;
-
-        board[12][0] = 1;
-        board[12][1] = 1;
-        board[12][2] = 1;
-        board[12][4] = 1;
-
-        board[11][0] = 1;
-        board[11][1] = 1;
-   
-
-        board[10][1] = 1;
+        board[2][4] = 1;
+        board[3][0] = 1;
+        board[3][1] = 1;
+        board[3][2] = 1;
+        
         int width = board[0].length * 50;
-        int height = board.length * 50;    
+        int height = board.length * 50;
 
         // { 'L', 'I', 'U', 'V', 'W', 'Y', 'Z', 'P', 'N', 'F', 'X' };
-        int id = Utils.characterToID('L');
+        int id = Utils.characterToID('I');
         int[][][] permuations = PentominosDatabase.data[id];
 
         BestPosition bestpos = bot.computeScore(board, permuations);
@@ -66,9 +57,9 @@ public class Bot {
         bot.addPiece(board, bestPiece, 2, bestX, bestY);
         grid.setGrid(board, 2, bot.emptySpaces);
         frame.setVisible(true);
-        
+
     }
-    
+
     private ArrayList<EmptySpace> emptySpaces;
     private double weightClearLines;
     private double weightDeadspaces;
@@ -80,7 +71,6 @@ public class Bot {
         this.weightHeightDifference = 0.5;
     }
 
-    
     public Bot(double weightClearLines, double weightDeadspaces, double weightHeightDifference) {
         this.weightClearLines = weightClearLines;
         this.weightDeadspaces = weightDeadspaces;
@@ -123,6 +113,9 @@ public class Bot {
                     }
                     if (((j == 0 || j == cols - 1) && i != 0) || i == rows - 1) {
                         score += 1;
+                        if ((j == 0|| j == cols - 1) && i == rows - 1) {
+                            score += 1;
+                        }
                     }
                     if (score > 0) {
                         totalScore += score;
@@ -167,9 +160,9 @@ public class Bot {
         int rows = board.length;
         int cols = board[0].length;
 
-        int bestX = -1;
-        int bestY = -1;
-        int[][] bestPiece = {};
+        int bestX = 0;
+        int bestY = 0;
+        int[][] bestPiece = data[0];
 
         double score = 0;
 
@@ -198,8 +191,12 @@ public class Bot {
                 break;
             }
         }
-
-        return new BestPosition(bestX - bestPiece.length + 1, bestY - adj, bestPiece, (int) maxScore, emptySpaces);
+        if (bestX == - 1 || bestY == -1) {
+            return new BestPosition(0, 0, bestPiece, (int) maxScore, emptySpaces);
+        }
+        bestX = bestX - bestPiece.length + 1;
+        bestY = bestY - adj;
+        return new BestPosition(bestX, bestY, bestPiece, (int) maxScore, emptySpaces);
     }
 
     /**
@@ -225,14 +222,19 @@ public class Bot {
 
         int startX = x - rows + 1;
         int startY = y - adj;
+
         double totalScore = 0;
         if (startX >= 0 && startX + rows <= board.length && startY >= 0 && startY + cols <= board[0].length) {
+            if (!checkIllegalMove(board, startX, startY, piece)) {
+                return 0;
+            }
             for (int i = 0; i < rows; i++) {
                 for (int j = 0; j < cols; j++) {
                     if (piece[i][j] == 1) {
                         if (board[i + startX][j + startY] != -1) {
                             return 0;
                         }
+
                         int score = getScoreFromPosition(startX + i, startY + j);
                         totalScore += score;
                     }
@@ -257,13 +259,34 @@ public class Bot {
         // // count deadspaces
         int deadspaces = countDeadSpace(_board);
 
-        totalScore += weightClearLines * fullRows; 
+        totalScore += weightClearLines * fullRows;
         totalScore -= weightHeightDifference * diffrence;
         totalScore -= weightDeadspaces * deadspaces;
 
         return totalScore;
     }
 
+    public boolean checkIllegalMove(int[][] board, int x, int y, int[][] piece) {
+        int rows = piece.length;
+        int cols = piece[0].length;
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (piece[i][j] == 1) {
+                    int startX = x + i;
+                    int startY = y + j;
+
+                    for (int k = 0; k <= startX; k++) {
+                        if (board[k][startY] != -1) {
+                            return false;
+                        }
+                    }
+                }
+                
+            }
+        }
+        return true;
+    }
 
     public int countDeadSpace(int[][] board) {
 

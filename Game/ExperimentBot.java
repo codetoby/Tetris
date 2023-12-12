@@ -30,7 +30,7 @@ public class ExperimentBot extends TetrisBase {
         grid.setGrid(field, id);
 
         if (entryX + piece.length > (height / size) || checkCollision(field, piece, entryX, entryY, id)) {
-            placePieceOnField(piece, field);
+            addPiece(field, piece, id, entryX, entryY);
             pieceCounter++;
             grid.setGrid(field, id);
 
@@ -53,9 +53,7 @@ public class ExperimentBot extends TetrisBase {
 
     @Override
     public void checkForFullLines(int[][] field) {
-        // Utils.printMatrix(field);
         grid.setGrid(field, id);
-        // pieceTimer.stop();
 
         for (int k = field.length - 1; k >= 0; k--) {
             boolean full = true;
@@ -71,9 +69,7 @@ public class ExperimentBot extends TetrisBase {
                     field[line][l] = -1;
                 }
 
-                grid.setGrid(field, id);
                 gravity(field, line);
-                grid.setGrid(field, id);
                 checkForFullLines(field);
                 menu.score.incrementScore();
 

@@ -1,15 +1,12 @@
-import java.util.Arrays;
-
 public class BotGame extends TetrisBase {
 
     private int[][][] currentPermutation;
     private Bot bot;
 
     public BotGame(int width, int height, int size, StartingMenu startingMenu) {
-        super(width, height, size, startingMenu, 20);  
-        bot = new Bot();
-
-        //Utils.shuffleArray(input);
+        super(width, height, size, startingMenu, 200);  
+        bot = new Bot(1, 1, 0);
+        // Utils.shuffleArray(input);
     }
 
     @Override
@@ -28,7 +25,7 @@ public class BotGame extends TetrisBase {
         grid.setGrid(field, id);
 
         if (entryX + piece.length > (height / size) || checkCollision(field, piece, entryX, entryY, id)) {
-            placePieceOnField(piece, field);
+            addPiece(field, piece, id, entryX, entryY);
             grid.setGrid(field, id);
             checkForFullLines(field);
 

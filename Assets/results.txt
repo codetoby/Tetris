@@ -1,512 +1,512 @@
-weightClearLines: 0.0 weightHeightDifference: 0.0 weightDeadspaces: 0.0    Score: 10
-weightClearLines: 0.0 weightHeightDifference: 0.0 weightDeadspaces: 0.25    Score: 10
-weightClearLines: 0.0 weightHeightDifference: 0.0 weightDeadspaces: 0.5    Score: 10
-weightClearLines: 0.0 weightHeightDifference: 0.0 weightDeadspaces: 0.75    Score: 10
-weightClearLines: 0.0 weightHeightDifference: 0.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.25 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 0.25 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 0.25 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 0.25 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 0.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.5 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 0.5 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 0.5 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 0.5 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 0.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.75 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 0.75 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 0.75 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 0.75 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 0.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 0.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.0 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.0 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.0 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.0 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.25 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.25 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.25 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.25 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.5 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.5 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.5 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.5 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.75 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.75 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.75 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.75 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.0 weightHeightDifference: 1.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.0 weightHeightDifference: 1.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.0 weightDeadspaces: 0.0    Score: 9
-weightClearLines: 0.25 weightHeightDifference: 0.0 weightDeadspaces: 0.25    Score: 10
-weightClearLines: 0.25 weightHeightDifference: 0.0 weightDeadspaces: 0.5    Score: 10
-weightClearLines: 0.25 weightHeightDifference: 0.0 weightDeadspaces: 0.75    Score: 10
-weightClearLines: 0.25 weightHeightDifference: 0.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.25 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 0.25 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 0.25 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 0.25 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 0.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.5 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 0.5 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 0.5 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 0.5 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 0.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.75 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 0.75 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 0.75 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 0.75 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 0.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 0.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.0 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.0 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.0 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.0 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.25 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.25 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.25 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.25 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.5 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.5 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.5 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.5 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.75 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.75 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.75 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.75 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.25 weightHeightDifference: 1.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.25 weightHeightDifference: 1.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.0 weightDeadspaces: 0.0    Score: 9
-weightClearLines: 0.5 weightHeightDifference: 0.0 weightDeadspaces: 0.25    Score: 10
-weightClearLines: 0.5 weightHeightDifference: 0.0 weightDeadspaces: 0.5    Score: 10
-weightClearLines: 0.5 weightHeightDifference: 0.0 weightDeadspaces: 0.75    Score: 10
-weightClearLines: 0.5 weightHeightDifference: 0.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.25 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 0.25 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 0.25 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 0.25 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 0.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.5 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 0.5 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 0.5 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 0.5 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 0.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.75 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 0.75 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 0.75 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 0.75 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 0.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 0.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.0 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.0 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.0 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.0 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.25 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.25 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.25 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.25 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.5 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.5 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.5 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.5 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.75 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.75 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.75 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.75 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.5 weightHeightDifference: 1.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.5 weightHeightDifference: 1.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.0 weightDeadspaces: 0.0    Score: 9
-weightClearLines: 0.75 weightHeightDifference: 0.0 weightDeadspaces: 0.25    Score: 10
-weightClearLines: 0.75 weightHeightDifference: 0.0 weightDeadspaces: 0.5    Score: 10
-weightClearLines: 0.75 weightHeightDifference: 0.0 weightDeadspaces: 0.75    Score: 10
-weightClearLines: 0.75 weightHeightDifference: 0.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.25 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 0.25 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 0.25 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 0.25 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 0.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.5 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 0.5 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 0.5 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 0.5 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 0.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.75 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 0.75 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 0.75 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 0.75 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 0.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 0.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.0 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.0 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.0 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.0 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.25 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.25 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.25 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.25 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.5 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.5 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.5 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.5 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.75 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.75 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.75 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.75 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 0.75 weightHeightDifference: 1.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 0.75 weightHeightDifference: 1.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.0 weightDeadspaces: 0.0    Score: 9
-weightClearLines: 1.0 weightHeightDifference: 0.0 weightDeadspaces: 0.25    Score: 10
-weightClearLines: 1.0 weightHeightDifference: 0.0 weightDeadspaces: 0.5    Score: 10
-weightClearLines: 1.0 weightHeightDifference: 0.0 weightDeadspaces: 0.75    Score: 10
-weightClearLines: 1.0 weightHeightDifference: 0.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.25 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 0.25 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 0.25 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 0.25 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 0.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.5 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 0.5 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 0.5 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 0.5 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 0.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.75 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 0.75 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 0.75 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 0.75 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 0.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 0.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.0 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.0 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.0 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.0 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.25 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.25 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.25 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.25 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.5 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.5 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.5 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.5 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.75 weightDeadspaces: 0.0    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.75 weightDeadspaces: 0.25    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.75 weightDeadspaces: 0.5    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.75 weightDeadspaces: 0.75    Score: 6
-weightClearLines: 1.0 weightHeightDifference: 1.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.0 weightHeightDifference: 1.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.0 weightDeadspaces: 0.0    Score: 9
-weightClearLines: 1.25 weightHeightDifference: 0.0 weightDeadspaces: 0.25    Score: 10
-weightClearLines: 1.25 weightHeightDifference: 0.0 weightDeadspaces: 0.5    Score: 10
-weightClearLines: 1.25 weightHeightDifference: 0.0 weightDeadspaces: 0.75    Score: 10
-weightClearLines: 1.25 weightHeightDifference: 0.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.25 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 0.25 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 0.25 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 0.25 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 0.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.5 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 0.5 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 0.5 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 0.5 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 0.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.75 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 0.75 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 0.75 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 0.75 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 0.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 0.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.0 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.0 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.0 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.0 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.25 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.25 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.25 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.25 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.5 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.5 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.5 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.5 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.75 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.75 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.75 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.75 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.25 weightHeightDifference: 1.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.25 weightHeightDifference: 1.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.0 weightDeadspaces: 0.0    Score: 9
-weightClearLines: 1.5 weightHeightDifference: 0.0 weightDeadspaces: 0.25    Score: 10
-weightClearLines: 1.5 weightHeightDifference: 0.0 weightDeadspaces: 0.5    Score: 10
-weightClearLines: 1.5 weightHeightDifference: 0.0 weightDeadspaces: 0.75    Score: 10
-weightClearLines: 1.5 weightHeightDifference: 0.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.25 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 0.25 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 0.25 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 0.25 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 0.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.5 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 0.5 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 0.5 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 0.5 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 0.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.75 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 0.75 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 0.75 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 0.75 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 0.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 0.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.0 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.0 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.0 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.0 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.25 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.25 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.25 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.25 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.5 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.5 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.5 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.5 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.75 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.75 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.75 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.75 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.5 weightHeightDifference: 1.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.5 weightHeightDifference: 1.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.0 weightDeadspaces: 0.0    Score: 9
-weightClearLines: 1.75 weightHeightDifference: 0.0 weightDeadspaces: 0.25    Score: 10
-weightClearLines: 1.75 weightHeightDifference: 0.0 weightDeadspaces: 0.5    Score: 10
-weightClearLines: 1.75 weightHeightDifference: 0.0 weightDeadspaces: 0.75    Score: 10
-weightClearLines: 1.75 weightHeightDifference: 0.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.25 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 0.25 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 0.25 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 0.25 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 0.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.5 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 0.5 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 0.5 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 0.5 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 0.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.75 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 0.75 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 0.75 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 0.75 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 0.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 0.75 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.0 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.0 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.0 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.0 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.0 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.0 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.0 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.0 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.25 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.25 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.25 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.25 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.25 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.25 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.25 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.25 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.5 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.5 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.5 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.5 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.5 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.5 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.5 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.5 weightDeadspaces: 1.75    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.75 weightDeadspaces: 0.0    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.75 weightDeadspaces: 0.25    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.75 weightDeadspaces: 0.5    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.75 weightDeadspaces: 0.75    Score: 3
-weightClearLines: 1.75 weightHeightDifference: 1.75 weightDeadspaces: 1.0    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.75 weightDeadspaces: 1.25    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.75 weightDeadspaces: 1.5    Score: 8
-weightClearLines: 1.75 weightHeightDifference: 1.75 weightDeadspaces: 1.75    Score: 8
+Cleared Lines: 0.0 Height Difference: 0.0 Deadspaces: 0.0, Score: 28
+Cleared Lines: 0.0 Height Difference: 0.0 Deadspaces: 0.25, Score: 19
+Cleared Lines: 0.0 Height Difference: 0.0 Deadspaces: 0.5, Score: 19
+Cleared Lines: 0.0 Height Difference: 0.0 Deadspaces: 0.75, Score: 19
+Cleared Lines: 0.0 Height Difference: 0.0 Deadspaces: 1.0, Score: 33
+Cleared Lines: 0.0 Height Difference: 0.0 Deadspaces: 1.25, Score: 22
+Cleared Lines: 0.0 Height Difference: 0.0 Deadspaces: 1.5, Score: 22
+Cleared Lines: 0.0 Height Difference: 0.0 Deadspaces: 1.75, Score: 22
+Cleared Lines: 0.0 Height Difference: 0.25 Deadspaces: 0.0, Score: 16
+Cleared Lines: 0.0 Height Difference: 0.25 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.0 Height Difference: 0.25 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.0 Height Difference: 0.25 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.0 Height Difference: 0.25 Deadspaces: 1.0, Score: 33
+Cleared Lines: 0.0 Height Difference: 0.25 Deadspaces: 1.25, Score: 22
+Cleared Lines: 0.0 Height Difference: 0.25 Deadspaces: 1.5, Score: 22
+Cleared Lines: 0.0 Height Difference: 0.25 Deadspaces: 1.75, Score: 22
+Cleared Lines: 0.0 Height Difference: 0.5 Deadspaces: 0.0, Score: 16
+Cleared Lines: 0.0 Height Difference: 0.5 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.0 Height Difference: 0.5 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.0 Height Difference: 0.5 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.0 Height Difference: 0.5 Deadspaces: 1.0, Score: 33
+Cleared Lines: 0.0 Height Difference: 0.5 Deadspaces: 1.25, Score: 22
+Cleared Lines: 0.0 Height Difference: 0.5 Deadspaces: 1.5, Score: 22
+Cleared Lines: 0.0 Height Difference: 0.5 Deadspaces: 1.75, Score: 22
+Cleared Lines: 0.0 Height Difference: 0.75 Deadspaces: 0.0, Score: 16
+Cleared Lines: 0.0 Height Difference: 0.75 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.0 Height Difference: 0.75 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.0 Height Difference: 0.75 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.0 Height Difference: 0.75 Deadspaces: 1.0, Score: 33
+Cleared Lines: 0.0 Height Difference: 0.75 Deadspaces: 1.25, Score: 22
+Cleared Lines: 0.0 Height Difference: 0.75 Deadspaces: 1.5, Score: 22
+Cleared Lines: 0.0 Height Difference: 0.75 Deadspaces: 1.75, Score: 22
+Cleared Lines: 0.0 Height Difference: 1.0 Deadspaces: 0.0, Score: 16
+Cleared Lines: 0.0 Height Difference: 1.0 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.0 Height Difference: 1.0 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.0 Height Difference: 1.0 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.0 Height Difference: 1.0 Deadspaces: 1.0, Score: 33
+Cleared Lines: 0.0 Height Difference: 1.0 Deadspaces: 1.25, Score: 22
+Cleared Lines: 0.0 Height Difference: 1.0 Deadspaces: 1.5, Score: 22
+Cleared Lines: 0.0 Height Difference: 1.0 Deadspaces: 1.75, Score: 22
+Cleared Lines: 0.0 Height Difference: 1.25 Deadspaces: 0.0, Score: 16
+Cleared Lines: 0.0 Height Difference: 1.25 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.0 Height Difference: 1.25 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.0 Height Difference: 1.25 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.0 Height Difference: 1.25 Deadspaces: 1.0, Score: 33
+Cleared Lines: 0.0 Height Difference: 1.25 Deadspaces: 1.25, Score: 22
+Cleared Lines: 0.0 Height Difference: 1.25 Deadspaces: 1.5, Score: 22
+Cleared Lines: 0.0 Height Difference: 1.25 Deadspaces: 1.75, Score: 22
+Cleared Lines: 0.0 Height Difference: 1.5 Deadspaces: 0.0, Score: 16
+Cleared Lines: 0.0 Height Difference: 1.5 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.0 Height Difference: 1.5 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.0 Height Difference: 1.5 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.0 Height Difference: 1.5 Deadspaces: 1.0, Score: 33
+Cleared Lines: 0.0 Height Difference: 1.5 Deadspaces: 1.25, Score: 22
+Cleared Lines: 0.0 Height Difference: 1.5 Deadspaces: 1.5, Score: 22
+Cleared Lines: 0.0 Height Difference: 1.5 Deadspaces: 1.75, Score: 22
+Cleared Lines: 0.0 Height Difference: 1.75 Deadspaces: 0.0, Score: 16
+Cleared Lines: 0.0 Height Difference: 1.75 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.0 Height Difference: 1.75 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.0 Height Difference: 1.75 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.0 Height Difference: 1.75 Deadspaces: 1.0, Score: 33
+Cleared Lines: 0.0 Height Difference: 1.75 Deadspaces: 1.25, Score: 22
+Cleared Lines: 0.0 Height Difference: 1.75 Deadspaces: 1.5, Score: 22
+Cleared Lines: 0.0 Height Difference: 1.75 Deadspaces: 1.75, Score: 22
+Cleared Lines: 0.25 Height Difference: 0.0 Deadspaces: 0.0, Score: 24
+Cleared Lines: 0.25 Height Difference: 0.0 Deadspaces: 0.25, Score: 24
+Cleared Lines: 0.25 Height Difference: 0.0 Deadspaces: 0.5, Score: 24
+Cleared Lines: 0.25 Height Difference: 0.0 Deadspaces: 0.75, Score: 24
+Cleared Lines: 0.25 Height Difference: 0.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.25 Height Difference: 0.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.25 Height Difference: 0.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.25 Height Difference: 0.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.25 Height Difference: 0.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.25 Height Difference: 0.25 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.25 Height Difference: 0.25 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.25 Height Difference: 0.25 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.25 Height Difference: 0.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.25 Height Difference: 0.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.25 Height Difference: 0.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.25 Height Difference: 0.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.25 Height Difference: 0.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.25 Height Difference: 0.5 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.25 Height Difference: 0.5 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.25 Height Difference: 0.5 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.25 Height Difference: 0.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.25 Height Difference: 0.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.25 Height Difference: 0.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.25 Height Difference: 0.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.25 Height Difference: 0.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.25 Height Difference: 0.75 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.25 Height Difference: 0.75 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.25 Height Difference: 0.75 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.25 Height Difference: 0.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.25 Height Difference: 0.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.25 Height Difference: 0.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.25 Height Difference: 0.75 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.25 Height Difference: 1.0 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.25 Height Difference: 1.0 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.25 Height Difference: 1.0 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.25 Height Difference: 1.0 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.25 Height Difference: 1.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.25 Height Difference: 1.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.25 Height Difference: 1.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.25 Height Difference: 1.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.25 Height Difference: 1.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.25 Height Difference: 1.25 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.25 Height Difference: 1.25 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.25 Height Difference: 1.25 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.25 Height Difference: 1.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.25 Height Difference: 1.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.25 Height Difference: 1.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.25 Height Difference: 1.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.25 Height Difference: 1.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.25 Height Difference: 1.5 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.25 Height Difference: 1.5 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.25 Height Difference: 1.5 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.25 Height Difference: 1.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.25 Height Difference: 1.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.25 Height Difference: 1.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.25 Height Difference: 1.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.25 Height Difference: 1.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.25 Height Difference: 1.75 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.25 Height Difference: 1.75 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.25 Height Difference: 1.75 Deadspaces: 0.75, Score: 9
+Cleared Lines: 0.25 Height Difference: 1.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.25 Height Difference: 1.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.25 Height Difference: 1.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.25 Height Difference: 1.75 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.5 Height Difference: 0.0 Deadspaces: 0.0, Score: 24
+Cleared Lines: 0.5 Height Difference: 0.0 Deadspaces: 0.25, Score: 24
+Cleared Lines: 0.5 Height Difference: 0.0 Deadspaces: 0.5, Score: 24
+Cleared Lines: 0.5 Height Difference: 0.0 Deadspaces: 0.75, Score: 24
+Cleared Lines: 0.5 Height Difference: 0.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.5 Height Difference: 0.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.5 Height Difference: 0.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.5 Height Difference: 0.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.5 Height Difference: 0.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.5 Height Difference: 0.25 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.5 Height Difference: 0.25 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.5 Height Difference: 0.25 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.5 Height Difference: 0.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.5 Height Difference: 0.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.5 Height Difference: 0.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.5 Height Difference: 0.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.5 Height Difference: 0.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.5 Height Difference: 0.5 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.5 Height Difference: 0.5 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.5 Height Difference: 0.5 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.5 Height Difference: 0.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.5 Height Difference: 0.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.5 Height Difference: 0.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.5 Height Difference: 0.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.5 Height Difference: 0.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.5 Height Difference: 0.75 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.5 Height Difference: 0.75 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.5 Height Difference: 0.75 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.5 Height Difference: 0.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.5 Height Difference: 0.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.5 Height Difference: 0.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.5 Height Difference: 0.75 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.5 Height Difference: 1.0 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.5 Height Difference: 1.0 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.5 Height Difference: 1.0 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.5 Height Difference: 1.0 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.5 Height Difference: 1.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.5 Height Difference: 1.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.5 Height Difference: 1.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.5 Height Difference: 1.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.5 Height Difference: 1.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.5 Height Difference: 1.25 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.5 Height Difference: 1.25 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.5 Height Difference: 1.25 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.5 Height Difference: 1.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.5 Height Difference: 1.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.5 Height Difference: 1.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.5 Height Difference: 1.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.5 Height Difference: 1.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.5 Height Difference: 1.5 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.5 Height Difference: 1.5 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.5 Height Difference: 1.5 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.5 Height Difference: 1.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.5 Height Difference: 1.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.5 Height Difference: 1.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.5 Height Difference: 1.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.5 Height Difference: 1.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.5 Height Difference: 1.75 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.5 Height Difference: 1.75 Deadspaces: 0.5, Score: 9
+Cleared Lines: 0.5 Height Difference: 1.75 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.5 Height Difference: 1.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.5 Height Difference: 1.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.5 Height Difference: 1.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.5 Height Difference: 1.75 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.75 Height Difference: 0.0 Deadspaces: 0.0, Score: 24
+Cleared Lines: 0.75 Height Difference: 0.0 Deadspaces: 0.25, Score: 24
+Cleared Lines: 0.75 Height Difference: 0.0 Deadspaces: 0.5, Score: 24
+Cleared Lines: 0.75 Height Difference: 0.0 Deadspaces: 0.75, Score: 24
+Cleared Lines: 0.75 Height Difference: 0.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.75 Height Difference: 0.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.75 Height Difference: 0.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.75 Height Difference: 0.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.75 Height Difference: 0.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.75 Height Difference: 0.25 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.75 Height Difference: 0.25 Deadspaces: 0.5, Score: 22
+Cleared Lines: 0.75 Height Difference: 0.25 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.75 Height Difference: 0.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.75 Height Difference: 0.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.75 Height Difference: 0.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.75 Height Difference: 0.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.75 Height Difference: 0.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.75 Height Difference: 0.5 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.75 Height Difference: 0.5 Deadspaces: 0.5, Score: 22
+Cleared Lines: 0.75 Height Difference: 0.5 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.75 Height Difference: 0.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.75 Height Difference: 0.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.75 Height Difference: 0.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.75 Height Difference: 0.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.75 Height Difference: 0.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.75 Height Difference: 0.75 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.75 Height Difference: 0.75 Deadspaces: 0.5, Score: 22
+Cleared Lines: 0.75 Height Difference: 0.75 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.75 Height Difference: 0.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.75 Height Difference: 0.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.75 Height Difference: 0.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.75 Height Difference: 0.75 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.75 Height Difference: 1.0 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.75 Height Difference: 1.0 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.75 Height Difference: 1.0 Deadspaces: 0.5, Score: 22
+Cleared Lines: 0.75 Height Difference: 1.0 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.75 Height Difference: 1.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.75 Height Difference: 1.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.75 Height Difference: 1.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.75 Height Difference: 1.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.75 Height Difference: 1.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.75 Height Difference: 1.25 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.75 Height Difference: 1.25 Deadspaces: 0.5, Score: 22
+Cleared Lines: 0.75 Height Difference: 1.25 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.75 Height Difference: 1.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.75 Height Difference: 1.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.75 Height Difference: 1.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.75 Height Difference: 1.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.75 Height Difference: 1.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.75 Height Difference: 1.5 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.75 Height Difference: 1.5 Deadspaces: 0.5, Score: 22
+Cleared Lines: 0.75 Height Difference: 1.5 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.75 Height Difference: 1.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.75 Height Difference: 1.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.75 Height Difference: 1.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.75 Height Difference: 1.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 0.75 Height Difference: 1.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 0.75 Height Difference: 1.75 Deadspaces: 0.25, Score: 9
+Cleared Lines: 0.75 Height Difference: 1.75 Deadspaces: 0.5, Score: 22
+Cleared Lines: 0.75 Height Difference: 1.75 Deadspaces: 0.75, Score: 22
+Cleared Lines: 0.75 Height Difference: 1.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 0.75 Height Difference: 1.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 0.75 Height Difference: 1.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 0.75 Height Difference: 1.75 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.0 Height Difference: 0.0 Deadspaces: 0.0, Score: 22
+Cleared Lines: 1.0 Height Difference: 0.0 Deadspaces: 0.25, Score: 22
+Cleared Lines: 1.0 Height Difference: 0.0 Deadspaces: 0.5, Score: 22
+Cleared Lines: 1.0 Height Difference: 0.0 Deadspaces: 0.75, Score: 22
+Cleared Lines: 1.0 Height Difference: 0.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.0 Height Difference: 0.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.0 Height Difference: 0.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.0 Height Difference: 0.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.0 Height Difference: 0.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.0 Height Difference: 0.25 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.0 Height Difference: 0.25 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.0 Height Difference: 0.25 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.0 Height Difference: 0.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.0 Height Difference: 0.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.0 Height Difference: 0.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.0 Height Difference: 0.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.0 Height Difference: 0.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.0 Height Difference: 0.5 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.0 Height Difference: 0.5 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.0 Height Difference: 0.5 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.0 Height Difference: 0.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.0 Height Difference: 0.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.0 Height Difference: 0.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.0 Height Difference: 0.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.0 Height Difference: 0.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.0 Height Difference: 0.75 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.0 Height Difference: 0.75 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.0 Height Difference: 0.75 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.0 Height Difference: 0.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.0 Height Difference: 0.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.0 Height Difference: 0.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.0 Height Difference: 0.75 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.0 Height Difference: 1.0 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.0 Height Difference: 1.0 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.0 Height Difference: 1.0 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.0 Height Difference: 1.0 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.0 Height Difference: 1.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.0 Height Difference: 1.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.0 Height Difference: 1.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.0 Height Difference: 1.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.0 Height Difference: 1.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.0 Height Difference: 1.25 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.0 Height Difference: 1.25 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.0 Height Difference: 1.25 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.0 Height Difference: 1.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.0 Height Difference: 1.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.0 Height Difference: 1.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.0 Height Difference: 1.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.0 Height Difference: 1.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.0 Height Difference: 1.5 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.0 Height Difference: 1.5 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.0 Height Difference: 1.5 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.0 Height Difference: 1.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.0 Height Difference: 1.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.0 Height Difference: 1.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.0 Height Difference: 1.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.0 Height Difference: 1.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.0 Height Difference: 1.75 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.0 Height Difference: 1.75 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.0 Height Difference: 1.75 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.0 Height Difference: 1.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.0 Height Difference: 1.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.0 Height Difference: 1.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.0 Height Difference: 1.75 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.25 Height Difference: 0.0 Deadspaces: 0.0, Score: 22
+Cleared Lines: 1.25 Height Difference: 0.0 Deadspaces: 0.25, Score: 22
+Cleared Lines: 1.25 Height Difference: 0.0 Deadspaces: 0.5, Score: 22
+Cleared Lines: 1.25 Height Difference: 0.0 Deadspaces: 0.75, Score: 22
+Cleared Lines: 1.25 Height Difference: 0.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.25 Height Difference: 0.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.25 Height Difference: 0.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.25 Height Difference: 0.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.25 Height Difference: 0.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.25 Height Difference: 0.25 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.25 Height Difference: 0.25 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.25 Height Difference: 0.25 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.25 Height Difference: 0.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.25 Height Difference: 0.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.25 Height Difference: 0.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.25 Height Difference: 0.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.25 Height Difference: 0.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.25 Height Difference: 0.5 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.25 Height Difference: 0.5 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.25 Height Difference: 0.5 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.25 Height Difference: 0.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.25 Height Difference: 0.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.25 Height Difference: 0.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.25 Height Difference: 0.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.25 Height Difference: 0.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.25 Height Difference: 0.75 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.25 Height Difference: 0.75 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.25 Height Difference: 0.75 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.25 Height Difference: 0.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.25 Height Difference: 0.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.25 Height Difference: 0.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.25 Height Difference: 0.75 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.25 Height Difference: 1.0 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.25 Height Difference: 1.0 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.25 Height Difference: 1.0 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.25 Height Difference: 1.0 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.25 Height Difference: 1.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.25 Height Difference: 1.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.25 Height Difference: 1.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.25 Height Difference: 1.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.25 Height Difference: 1.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.25 Height Difference: 1.25 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.25 Height Difference: 1.25 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.25 Height Difference: 1.25 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.25 Height Difference: 1.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.25 Height Difference: 1.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.25 Height Difference: 1.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.25 Height Difference: 1.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.25 Height Difference: 1.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.25 Height Difference: 1.5 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.25 Height Difference: 1.5 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.25 Height Difference: 1.5 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.25 Height Difference: 1.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.25 Height Difference: 1.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.25 Height Difference: 1.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.25 Height Difference: 1.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.25 Height Difference: 1.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.25 Height Difference: 1.75 Deadspaces: 0.25, Score: 7
+Cleared Lines: 1.25 Height Difference: 1.75 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.25 Height Difference: 1.75 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.25 Height Difference: 1.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.25 Height Difference: 1.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.25 Height Difference: 1.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.25 Height Difference: 1.75 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.5 Height Difference: 0.0 Deadspaces: 0.0, Score: 22
+Cleared Lines: 1.5 Height Difference: 0.0 Deadspaces: 0.25, Score: 22
+Cleared Lines: 1.5 Height Difference: 0.0 Deadspaces: 0.5, Score: 22
+Cleared Lines: 1.5 Height Difference: 0.0 Deadspaces: 0.75, Score: 22
+Cleared Lines: 1.5 Height Difference: 0.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.5 Height Difference: 0.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.5 Height Difference: 0.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.5 Height Difference: 0.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.5 Height Difference: 0.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.5 Height Difference: 0.25 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.5 Height Difference: 0.25 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.5 Height Difference: 0.25 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.5 Height Difference: 0.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.5 Height Difference: 0.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.5 Height Difference: 0.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.5 Height Difference: 0.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.5 Height Difference: 0.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.5 Height Difference: 0.5 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.5 Height Difference: 0.5 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.5 Height Difference: 0.5 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.5 Height Difference: 0.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.5 Height Difference: 0.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.5 Height Difference: 0.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.5 Height Difference: 0.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.5 Height Difference: 0.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.5 Height Difference: 0.75 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.5 Height Difference: 0.75 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.5 Height Difference: 0.75 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.5 Height Difference: 0.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.5 Height Difference: 0.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.5 Height Difference: 0.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.5 Height Difference: 0.75 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.5 Height Difference: 1.0 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.5 Height Difference: 1.0 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.5 Height Difference: 1.0 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.5 Height Difference: 1.0 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.5 Height Difference: 1.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.5 Height Difference: 1.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.5 Height Difference: 1.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.5 Height Difference: 1.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.5 Height Difference: 1.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.5 Height Difference: 1.25 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.5 Height Difference: 1.25 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.5 Height Difference: 1.25 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.5 Height Difference: 1.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.5 Height Difference: 1.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.5 Height Difference: 1.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.5 Height Difference: 1.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.5 Height Difference: 1.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.5 Height Difference: 1.5 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.5 Height Difference: 1.5 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.5 Height Difference: 1.5 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.5 Height Difference: 1.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.5 Height Difference: 1.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.5 Height Difference: 1.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.5 Height Difference: 1.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.5 Height Difference: 1.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.5 Height Difference: 1.75 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.5 Height Difference: 1.75 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.5 Height Difference: 1.75 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.5 Height Difference: 1.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.5 Height Difference: 1.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.5 Height Difference: 1.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.5 Height Difference: 1.75 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.75 Height Difference: 0.0 Deadspaces: 0.0, Score: 22
+Cleared Lines: 1.75 Height Difference: 0.0 Deadspaces: 0.25, Score: 22
+Cleared Lines: 1.75 Height Difference: 0.0 Deadspaces: 0.5, Score: 22
+Cleared Lines: 1.75 Height Difference: 0.0 Deadspaces: 0.75, Score: 22
+Cleared Lines: 1.75 Height Difference: 0.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.75 Height Difference: 0.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.75 Height Difference: 0.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.75 Height Difference: 0.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.75 Height Difference: 0.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.75 Height Difference: 0.25 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.75 Height Difference: 0.25 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.75 Height Difference: 0.25 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.75 Height Difference: 0.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.75 Height Difference: 0.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.75 Height Difference: 0.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.75 Height Difference: 0.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.75 Height Difference: 0.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.75 Height Difference: 0.5 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.75 Height Difference: 0.5 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.75 Height Difference: 0.5 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.75 Height Difference: 0.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.75 Height Difference: 0.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.75 Height Difference: 0.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.75 Height Difference: 0.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.75 Height Difference: 0.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.75 Height Difference: 0.75 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.75 Height Difference: 0.75 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.75 Height Difference: 0.75 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.75 Height Difference: 0.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.75 Height Difference: 0.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.75 Height Difference: 0.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.75 Height Difference: 0.75 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.75 Height Difference: 1.0 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.75 Height Difference: 1.0 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.75 Height Difference: 1.0 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.75 Height Difference: 1.0 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.75 Height Difference: 1.0 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.75 Height Difference: 1.0 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.75 Height Difference: 1.0 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.75 Height Difference: 1.0 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.75 Height Difference: 1.25 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.75 Height Difference: 1.25 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.75 Height Difference: 1.25 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.75 Height Difference: 1.25 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.75 Height Difference: 1.25 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.75 Height Difference: 1.25 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.75 Height Difference: 1.25 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.75 Height Difference: 1.25 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.75 Height Difference: 1.5 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.75 Height Difference: 1.5 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.75 Height Difference: 1.5 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.75 Height Difference: 1.5 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.75 Height Difference: 1.5 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.75 Height Difference: 1.5 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.75 Height Difference: 1.5 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.75 Height Difference: 1.5 Deadspaces: 1.75, Score: 17
+Cleared Lines: 1.75 Height Difference: 1.75 Deadspaces: 0.0, Score: 13
+Cleared Lines: 1.75 Height Difference: 1.75 Deadspaces: 0.25, Score: 16
+Cleared Lines: 1.75 Height Difference: 1.75 Deadspaces: 0.5, Score: 16
+Cleared Lines: 1.75 Height Difference: 1.75 Deadspaces: 0.75, Score: 16
+Cleared Lines: 1.75 Height Difference: 1.75 Deadspaces: 1.0, Score: 28
+Cleared Lines: 1.75 Height Difference: 1.75 Deadspaces: 1.25, Score: 17
+Cleared Lines: 1.75 Height Difference: 1.75 Deadspaces: 1.5, Score: 17
+Cleared Lines: 1.75 Height Difference: 1.75 Deadspaces: 1.75, Score: 17

@@ -455,7 +455,7 @@ public class PentominoBuilder {
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
         makeDatabase();
 
-        PrintWriter writer = new PrintWriter("pentominos.csv", "UTF-8");
+        PrintWriter writer = new PrintWriter("pentominosRotation.csv", "UTF-8");
 
         for (int i = 0; i < database.size(); i++) {
             for (int j = 0; j < database.get(i).length; j++) {
