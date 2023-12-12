@@ -18,9 +18,9 @@ public class ExperimentBot extends TetrisBase {
     }
 
     public void handlePieceMovement() {
-        // if (pieceCounter == input.length) {
-        //     timer.stop();
-        // }
+        if (pieceCounter == input.length) {
+            timer.stop();
+        }
         clearBoard(field, prevPiece, tempEntryX, tempEntryY, id);
         tempEntryY = entryY;
         tempEntryX = entryX;

@@ -12,7 +12,7 @@ public class Experiments extends JFrame {
     public ExperimentBot experimentBot;
     private char[] input = { 'N', 'V', 'L', 'P', 'X', 'I', 'W', 'F', 'Y', 'Z', 'U', 'T' };
     // private char[] input = { 'I', 'X', 'Y', 'V', 'T', 'U', 'Z', 'N', 'F', 'P', 'W', 'L' };
-    double[] weights = { 0, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75 };
+    double[] weights = { 0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75 };
     String[] names = { "Amount of Cleared Lines", "Height Difference", "Amount of Deadspaces" };
 
     public Experiments(int width, int height, int size, StartingMenu startingMenu) {
@@ -30,8 +30,8 @@ public class Experiments extends JFrame {
         setVisible(true);
 
         // Utils.shuffleArray(input);
-        System.out.println(Arrays.toString(input));
-        startExperimentSet();
+        // System.out.println(Arrays.toString(input));
+        startExperimentSet(0);
 
     }
 
@@ -65,6 +65,55 @@ public class Experiments extends JFrame {
                 }
 
                 return null;
+            }
+        }.execute();
+    }
+
+    private void startExperimentSet(int setNameIndex) {
+        
+        if (setNameIndex >= names.length) {
+            System.out.println("All experiment sets completed.");
+            return;
+        }
+        
+        System.out.println(names[setNameIndex]);
+
+        new SwingWorker<Void, Integer>() {
+            @Override
+            protected Void doInBackground() throws Exception {
+                for (double weight : weights) {
+                  
+                    double weightClearLines = setNameIndex == 0 ? weight : 0;
+                    double weightHeightDifference = setNameIndex == 1 ? weight : 0;
+                    double weightDeadspaces = setNameIndex == 2 ? weight : 0;
+                    
+                    final Bot bot = new Bot(weightClearLines, weightDeadspaces, weightHeightDifference);
+                    experimentBot = new ExperimentBot(width, height, size, startingMenu, bot, input);
+                    add(experimentBot);
+                    experimentBot.initilize();
+                    
+                    while (experimentBot.getTimer().isRunning()) {
+                        Thread.sleep(100);
+                    }
+                    
+                    int score = experimentBot.scoreCounter;
+                    System.out.print("Weight: " + weight + " ");
+                    publish(score);
+                    remove(experimentBot);
+                }
+                return null;
+            }
+
+            @Override
+            protected void process(List<Integer> chunks) {
+                for (int score : chunks) {
+                    System.out.println("Score: " + score);
+                }
+            }
+
+            @Override
+            protected void done() {
+                startExperimentSet(setNameIndex + 1);
             }
         }.execute();
     }
