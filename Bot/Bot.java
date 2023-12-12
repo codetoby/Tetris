@@ -113,6 +113,9 @@ public class Bot {
                     }
                     if (((j == 0 || j == cols - 1) && i != 0) || i == rows - 1) {
                         score += 1;
+                        if ((j == 0|| j == cols - 1) && i == rows - 1) {
+                            score += 1;
+                        }
                     }
                     if (score > 0) {
                         totalScore += score;
