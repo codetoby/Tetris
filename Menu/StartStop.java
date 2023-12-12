@@ -8,7 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class StartStop extends JPanel {
-    
+
     public StartStop(TetrisBase tetrisBase) {
         setBackground(Color.ORANGE);
         setPreferredSize(new Dimension(250, 100));
@@ -16,7 +16,7 @@ public class StartStop extends JPanel {
         JButton button = new JButton("Start Stop");
 
         button.setBorderPainted(false);
-        button.setBackground(new Color(200,200,200));
+        button.setBackground(new Color(200, 200, 200));
         button.setFocusPainted(true);
 
         button.addActionListener(new ActionListener() {
@@ -32,5 +32,5 @@ public class StartStop extends JPanel {
         });
         add(button, BorderLayout.CENTER);
     }
-    
+
 }

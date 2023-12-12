@@ -1,7 +1,6 @@
 import java.awt.*;
 import javax.swing.*;
 
-
 public class Score extends JPanel {
 
     int score = 0;
@@ -9,8 +8,8 @@ public class Score extends JPanel {
     public JLabel currentScore;
 
     public Score() {
-    
-        setBackground(new Color(150,150,150));
+
+        setBackground(new Color(150, 150, 150));
         setPreferredSize(new Dimension(122, 75));
         setLayout(new GridBagLayout());
 
@@ -22,7 +21,7 @@ public class Score extends JPanel {
         add(scoreText, gbc);
         add(currentScore, gbc);
 
-    }    
+    }
 
     // @Override
     // public void paintComponent(Graphics g) {

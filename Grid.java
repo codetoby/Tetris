@@ -1,6 +1,5 @@
 import java.awt.*;
 import java.util.ArrayList;
-
 import javax.swing.*;
 
 public class Grid extends JPanel {
@@ -21,6 +20,11 @@ public class Grid extends JPanel {
         setPreferredSize(new Dimension(width, height));
     }
 
+    
+    /** 
+     * @param i piece id
+     * @return Color
+     */
     public static Color GetColorOfID(int i) {
         if (i == 0) {
             return Color.BLUE;
@@ -74,7 +78,7 @@ public class Grid extends JPanel {
         }
 
         if (emptySpaces != null) {
-            g.setColor(Color.BLACK); 
+            g.setColor(Color.BLACK);
             for (EmptySpace space : emptySpaces) {
                 int x = space.x;
                 int y = space.y;
@@ -85,6 +89,11 @@ public class Grid extends JPanel {
 
     }
 
+    
+    /** 
+     * @param _grid
+     * @param _id
+     */
     public void setGrid(int[][] _grid, int _id) {
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length; j++) {
@@ -97,6 +106,11 @@ public class Grid extends JPanel {
 
     }
 
+    /** 
+     * @param _grid board
+     * @param _id id 
+     * @param emptySpaces empty spaces
+     */
     public void setGrid(int[][] _grid, int _id, ArrayList<EmptySpace> emptySpaces) {
         this.emptySpaces = emptySpaces;
         for (int i = 0; i < grid.length; i++) {

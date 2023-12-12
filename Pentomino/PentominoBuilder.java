@@ -1,3 +1,4 @@
+
 /**
  * @author Department of Data Science and Knowledge Engineering (DKE)
  * @version 2022.0
@@ -142,7 +143,7 @@ public class PentominoBuilder {
      * Assume that the matrix is a square!
      * It does not make a copy, so the return matrix does not have to be used
      * 
-     * @param data:     a matrixs
+     * @param data: a matrixs
      * @return the rotated matrix
      */
 
@@ -165,15 +166,15 @@ public class PentominoBuilder {
     public static int[][] rotateMinus(int[][] piece) {
         int rows = piece.length;
         int cols = piece[0].length;
-    
+
         int[][] newPiece = new int[cols][rows];
-    
+
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 newPiece[cols - 1 - j][i] = piece[i][j];
             }
         }
-    
+
         return newPiece;
     }
 
@@ -472,7 +473,8 @@ public class PentominoBuilder {
         }
         writer.close();
     }
-    public  static int characterToID(char character) {
+
+    public static int characterToID(char character) {
         int pentID = -1;
         if (character == 'X') {
             pentID = 0;
@@ -501,6 +503,5 @@ public class PentominoBuilder {
         }
         return pentID;
     }
-
 
 }

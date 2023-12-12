@@ -11,7 +11,6 @@ public class Utils {
         return copy;
     }
 
-
     public static void printMatrix(int[][] data) {
         for (int i = 0; i < data.length; i++) {
             System.out.println(Arrays.toString(data[i]));
@@ -19,14 +18,14 @@ public class Utils {
     }
 
     public static void shuffleArray(char[] inputArray) {
-		Random rnd = new Random();
-		for (int i = inputArray.length - 1; i > 0; i--) {
-			int index = rnd.nextInt(i + 1);
-			char temp = inputArray[index];
-			inputArray[index] = inputArray[i];
-			inputArray[i] = temp;
-		}
-	}
+        Random rnd = new Random();
+        for (int i = inputArray.length - 1; i > 0; i--) {
+            int index = rnd.nextInt(i + 1);
+            char temp = inputArray[index];
+            inputArray[index] = inputArray[i];
+            inputArray[i] = temp;
+        }
+    }
 
     public static int characterToID(char character) {
         int pentID = -1;
@@ -57,5 +56,5 @@ public class Utils {
         }
         return pentID;
     }
-    
+
 }

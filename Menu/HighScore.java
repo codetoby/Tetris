@@ -1,15 +1,15 @@
 import java.awt.*;
 import javax.swing.*;
 
-public class HighScore extends JPanel{
+public class HighScore extends JPanel {
 
     int score = 0;
     public JLabel scoreText;
     public JLabel currentScore;
 
     public HighScore() {
-    
-        setBackground(new Color(200,200,200));
+
+        setBackground(new Color(200, 200, 200));
         setPreferredSize(new Dimension(123, 75));
         setLayout(new GridBagLayout());
 
@@ -21,7 +21,7 @@ public class HighScore extends JPanel{
         add(scoreText, gbc);
         add(currentScore, gbc);
 
-    }    
+    }
 
     // @Override
     // public void paintComponent(Graphics g) {
@@ -32,5 +32,5 @@ public class HighScore extends JPanel{
         this.score += 1;
         repaint();
     }
-    
+
 }

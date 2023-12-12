@@ -24,7 +24,7 @@ public class Bot {
         board[3][0] = 1;
         board[3][1] = 1;
         board[3][2] = 1;
-        
+
         int width = board[0].length * 50;
         int height = board.length * 50;
 
@@ -113,7 +113,7 @@ public class Bot {
                     }
                     if (((j == 0 || j == cols - 1) && i != 0) || i == rows - 1) {
                         score += 1;
-                        if ((j == 0|| j == cols - 1) && i == rows - 1) {
+                        if ((j == 0 || j == cols - 1) && i == rows - 1) {
                             score += 1;
                         }
                     }
@@ -191,7 +191,7 @@ public class Bot {
                 break;
             }
         }
-        if (bestX == - 1 || bestY == -1) {
+        if (bestX == -1 || bestY == -1) {
             return new BestPosition(0, 0, bestPiece, (int) maxScore, emptySpaces);
         }
         bestX = bestX - bestPiece.length + 1;
@@ -266,6 +266,14 @@ public class Bot {
         return totalScore;
     }
 
+    
+    /** 
+     * @param board
+     * @param x
+     * @param y
+     * @param piece
+     * @return boolean
+     */
     public boolean checkIllegalMove(int[][] board, int x, int y, int[][] piece) {
         int rows = piece.length;
         int cols = piece[0].length;
@@ -282,12 +290,17 @@ public class Bot {
                         }
                     }
                 }
-                
+
             }
         }
         return true;
     }
 
+    
+    /** 
+     * @param board
+     * @return int
+     */
     public int countDeadSpace(int[][] board) {
 
         int rows = board.length;
@@ -306,6 +319,15 @@ public class Bot {
         return deadspaces;
     }
 
+    
+    /** 
+     * @param board
+     * @param boardHeight
+     * @param boardWidth
+     * @param i
+     * @param j
+     * @return int
+     */
     public int checkSpace(int[][] board, int boardHeight, int boardWidth, int i, int j) {
 
         int[][] directions = {
@@ -329,6 +351,10 @@ public class Bot {
         return 1;
     }
 
+    
+    /** 
+     * @param field
+     */
     public void checkForFullLines(int[][] field) {
         for (int k = field.length - 1; k >= 0; k--) {
             boolean full = true;
@@ -350,6 +376,11 @@ public class Bot {
         }
     }
 
+    
+    /** 
+     * @param board
+     * @return int
+     */
     public int firstEmptyRowFromBottom(int[][] board) {
 
         int rows = board.length;
@@ -365,6 +396,11 @@ public class Bot {
         return rows;
     }
 
+    
+    /** 
+     * @param field
+     * @return int
+     */
     public int countFullRows(int[][] field) {
         int fullRows = 0;
         for (int k = field.length - 1; k >= 0; k--) {
@@ -388,6 +424,11 @@ public class Bot {
         return fullRows;
     }
 
+    
+    /** 
+     * @param board
+     * @param line
+     */
     public void cascadeGravity(int[][] board, int line) {
         int rows = board.length;
         int cols = board[0].length;
@@ -408,6 +449,14 @@ public class Bot {
         }
     }
 
+    
+    /** 
+     * @param field
+     * @param piece
+     * @param pieceID
+     * @param x
+     * @param y
+     */
     public void addPiece(int[][] field, int[][] piece, int pieceID, int x, int y) {
         for (int i = 0; i < piece.length; i++) {
             for (int j = 0; j < piece[i].length; j++) {

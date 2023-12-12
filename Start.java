@@ -5,5 +5,5 @@ public class Start {
         StartingMenu window = new StartingMenu(width, height, size);
         window.initialize();
     }
-    
+
 }
