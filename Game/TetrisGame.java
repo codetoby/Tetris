@@ -1,11 +1,15 @@
 import java.awt.event.*;
+import java.util.Arrays;
 
 public class TetrisGame extends TetrisBase implements KeyListener {
 
-    public TetrisGame(int width, int height, int size, StartingMenu startingMenu) {
+    public TetrisGame(int width, int height, int size, StartingMenu startingMenu, boolean randomSequence) {
         super(width, height, size, startingMenu, 200);
         addKeyListener(this);
-
+        if (randomSequence) {
+            Utils.shuffleArray(input);
+        }
+        System.out.println(Arrays.toString(input));
     }
 
     public void nextPiece(int index) {

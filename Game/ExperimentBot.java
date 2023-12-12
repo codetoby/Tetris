@@ -4,12 +4,16 @@ public class ExperimentBot extends TetrisBase {
     private Bot bot;
     private int pieceCounter;
     public int scoreCounter = 0;
+    public boolean twelve;
+    public boolean countScore;
 
-    public ExperimentBot(int width, int height, int size, StartingMenu startingMenu, Bot bot, char[] input) {
+    public ExperimentBot(int width, int height, int size, StartingMenu startingMenu, Bot bot, char[] input, boolean twelve, boolean countScore) {
         super(width, height, size, startingMenu, 1);  
         this.bot = bot;
         this.input = input;
         this.pieceCounter = 0;
+        this.twelve = twelve;
+        this.countScore = countScore;
     }
 
     @Override
@@ -18,9 +22,14 @@ public class ExperimentBot extends TetrisBase {
     }
 
     public void handlePieceMovement() {
-        if (pieceCounter == input.length) {
+        if (twelve && this.pieceCounter == input.length) {
             timer.stop();
         }
+
+        if (countScore && scoreCounter >= 60) {
+            timer.stop();
+        }
+        
         clearBoard(field, prevPiece, tempEntryX, tempEntryY, id);
         tempEntryY = entryY;
         tempEntryX = entryX;

@@ -23,27 +23,27 @@ public class StartingMenu extends JFrame {
         Image icon = Toolkit.getDefaultToolkit().getImage("./Assets/icon.png");
         setIconImage(icon);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(width, height + 50);
+        setSize(width, height + 100);
         setLocationRelativeTo(null);
         setResizable(false);
-        setBackground(new Color(150,150,150));
+        setBackground(new Color(150, 150, 150));
 
         ImageIcon startMenuPic = new ImageIcon("./Assets/startMenuPicture.png");
         JLabel logo = new JLabel(startMenuPic);
 
-        botVersion = new BotGame(width, height, size, this);
-        humanVersion = new TetrisGame(width, height, size, this); 
-        experiments = new Experiments(width, height, size, this);
+        JLabel switchJLabel = new JLabel("Random Sequence");
+        ToggleSwitch switchRandomSequence = new ToggleSwitch();
+        switchJLabel.setLabelFor(switchRandomSequence);
 
-     
         JButton botVersionButton = new JButton("Launch Tetris Bot");
         botVersionButton.setBorderPainted(false);
-        botVersionButton.setBackground(new Color(200,200,200));
+        botVersionButton.setBackground(new Color(200, 200, 200));
         botVersionButton.setPreferredSize(new Dimension(184, 30));
         botVersionButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 setResizable(true);
+                botVersion = new BotGame(width, height, size, StartingMenu.this, switchRandomSequence.isActivated());
                 switchToPanel(botVersion);
                 botVersion.initilize();
             }
@@ -51,35 +51,42 @@ public class StartingMenu extends JFrame {
 
         JButton botExperiments = new JButton("Bot Experiments");
         botExperiments.setBorderPainted(false);
-        botExperiments.setBackground(new Color(200,200,200));
+        botExperiments.setBackground(new Color(200, 200, 200));
         botExperiments.setPreferredSize(new Dimension(184, 30));
         botExperiments.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 setResizable(true);
                 setVisible(false);
+                experiments = new Experiments(width, height, size, StartingMenu.this,
+                        switchRandomSequence.isActivated());
                 experiments.setVisible(true);
                 experiments.initialize();
             }
-            
         });
 
         JButton humanVesrionButton = new JButton("Launch Tetris Game");
         humanVesrionButton.setBorderPainted(false);
-        humanVesrionButton.setBackground(new Color(200,200,200));
+        humanVesrionButton.setBackground(new Color(200, 200, 200));
         humanVesrionButton.setPreferredSize(new Dimension(184, 30));
         humanVesrionButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            setResizable(true);
+                setResizable(true);
+                humanVersion = new TetrisGame(width, height, size, StartingMenu.this,
+                        switchRandomSequence.isActivated());
                 switchToPanel(humanVersion);
                 humanVersion.initilize();
-                
+
             }
         });
+        Dimension size = new Dimension(50, 25);
+        switchRandomSequence.setPreferredSize(size);
+        switchRandomSequence.setMinimumSize(size);
+        switchRandomSequence.setMaximumSize(size);
 
         HighScoreList list = new HighScoreList();
-        
+
         list.setPreferredSize(new Dimension(184, 445));
 
         setLayout(new FlowLayout());
@@ -88,6 +95,8 @@ public class StartingMenu extends JFrame {
         add(botVersionButton);
         add(humanVesrionButton);
         add(botExperiments);
+        add(switchJLabel);
+        add(switchRandomSequence);
         setVisible(true);
     }
 

@@ -4,8 +4,6 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.LinkedList;
-
 import javax.swing.*;
 
 public abstract class TetrisBase extends JPanel {
@@ -25,8 +23,6 @@ public abstract class TetrisBase extends JPanel {
     public final int WIDTHMENU = 300;
     public int nextId;
     public int[][] nextPiece;
-    // public char[] input = { 'N', 'V', 'L', 'P', 'X', 'I', 'W', 'F', 'Y', 'Z', 'U', 'T' };
-    // public char[] input = { 'I', 'X', 'Y', 'V', 'T', 'U', 'Z', 'N', 'F', 'P', 'W', 'L'};
     public char[] input = { 'N', 'V', 'L', 'P', 'X', 'I', 'W', 'F', 'Y', 'Z', 'U', 'T' };
     public int index = 0;
     public int tempEntryY = entryY;
@@ -34,7 +30,6 @@ public abstract class TetrisBase extends JPanel {
     public int[][] prevPiece;
     public StartingMenu startingMenu;
     public int delay;
-    public boolean keyPressed = false;
 
     public TetrisBase(int width, int height, int size, StartingMenu startingMenu, int delay) {
         this.width = width;
@@ -88,6 +83,12 @@ public abstract class TetrisBase extends JPanel {
         entryY = 0;
     }
 
+    
+    /** 
+     * @param field
+     * @param id
+     * @return boolean
+     */
     public boolean checkGameEnds(int[][] field, int id) {
         for (int m = 0; m < field[0].length; m++) {
             if (field[0][m] == id) {
