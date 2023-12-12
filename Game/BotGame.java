@@ -1,16 +1,12 @@
-import java.util.Arrays;
-
 public class BotGame extends TetrisBase {
 
     private int[][][] currentPermutation;
     private Bot bot;
 
     public BotGame(int width, int height, int size, StartingMenu startingMenu) {
-        super(width, height, size, startingMenu, 10);  
-        bot = new Bot(0, 1.25, 0);
-        
+        super(width, height, size, startingMenu, 200);  
+        bot = new Bot(1, 1, 0);
         // Utils.shuffleArray(input);
-        System.out.println(Arrays.toString(input));
     }
 
     @Override
